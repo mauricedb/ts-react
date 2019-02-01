@@ -28,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "jest-dom": "^3.0.1",
     "react-testing-library": "^5.4.4"
   }
 }
