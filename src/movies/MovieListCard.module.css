@@ -1,0 +1,8 @@
+.movie {
+    flex-basis: 300px;
+  
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+}
+
+
+.movies {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
