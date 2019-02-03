@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './Counter/Counter';
+import Person from './Person/Person'
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         </header>
         <Counter />
         <Counter amount={2} />
+        <Person />
       </div>
     );
   }
