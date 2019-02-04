@@ -16,14 +16,14 @@ const movies: MovieType[] = [
     title: 'A movie',
     image: '/img/a-movie.png',
     overview: 'The movie',
-    genres: ['one']
+    genres: ['genre one']
   },
   {
     id: 2,
     title: 'Another movie',
     image: '/img/another-movie.png',
     overview: 'That other movie',
-    genres: ['two', 'three']
+    genres: ['genre two', 'genre three']
   }
 ];
 
@@ -43,7 +43,7 @@ describe('The MoviesList', () => {
   });
 
   test('can render with two movies', () => {
-    const { getByText, queryByText } = render(
+    const { getByText } = render(
       <MoviesList movies={movies} selected={null} setSelected={setSelected} />
     );
 
@@ -58,7 +58,7 @@ describe('The MoviesList', () => {
       <MoviesList movies={movies} selected={null} setSelected={setSelected} />
     );
 
-    expect(queryByText('one')).not.toBeInTheDocument();
+    expect(queryByText('genre one')).not.toBeInTheDocument();
   });
 
   test('renders the genre when the movie is selected', async () => {
@@ -70,13 +70,13 @@ describe('The MoviesList', () => {
       />
     );
 
-    await waitForElement(() => getByText('one'));
+    await waitForElement(() => getByText('genre one'));
 
-    expect(getByText('one')).toBeInTheDocument();
+    expect(getByText('genre one')).toBeInTheDocument();
   });
 
   test('selects a movie when the card header is clicked', () => {
-    const { getByText, queryByText } = render(
+    const { getByText } = render(
       <MoviesList movies={movies} selected={null} setSelected={setSelected} />
     );
 
