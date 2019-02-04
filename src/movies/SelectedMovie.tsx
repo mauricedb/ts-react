@@ -17,7 +17,11 @@ const SelectedMovie: React.SFC<SelectedMovieProps> = ({
     <div className={classes.detail}>
       <div className={classes['detail-header']}>
         <h4>{selected.title}</h4>
-        <span className={classes['close-button']} role="button" onClick={onMovieCleared}>
+        <span
+          className={classes['close-button']}
+          role="button"
+          onClick={onMovieCleared}
+        >
           &times;
         </span>
       </div>

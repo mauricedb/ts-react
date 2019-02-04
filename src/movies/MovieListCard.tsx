@@ -3,7 +3,6 @@ import React, { SFC } from 'react';
 import MovieType from './MovieType';
 import classes from './MovieListCard.module.css';
 
-
 type MovieListCardProps = {
   movie: MovieType;
   onMovieClicked: (movie: MovieType) => void;

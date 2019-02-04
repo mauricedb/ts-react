@@ -64,26 +64,23 @@ const useAbortableFetch = <T>(
     };
   }, []);
 
-  useEffect(
-    () => {
-      const controller = new AbortController();
-      setState((oldState: FetchState) => ({
-        data: null,
-        loading: oldState.loading + 1,
-        error: null,
-        controller
-      }));
+  useEffect(() => {
+    const controller = new AbortController();
+    setState((oldState: FetchState) => ({
+      data: null,
+      loading: oldState.loading + 1,
+      error: null,
+      controller
+    }));
 
-      fetchData(url, controller.signal, state => {
-        if (isMounted.current) {
-          setState(state);
-        }
-      });
+    fetchData(url, controller.signal, state => {
+      if (isMounted.current) {
+        setState(state);
+      }
+    });
 
-      return () => controller.abort();
-    },
-    [url]
-  );
+    return () => controller.abort();
+  }, [url]);
 
   return {
     data: state.data,

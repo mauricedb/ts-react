@@ -7,7 +7,6 @@ import classes from './MoviesList.module.css';
 
 const SelectedMovie = lazy(() => import('./SelectedMovie'));
 
-
 type MoviesListProps = {
   movies: MovieType[];
   selected: MovieType | null;

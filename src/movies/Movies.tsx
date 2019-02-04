@@ -6,9 +6,7 @@ import Loading from './Loading';
 import MoviesList from './MoviesList';
 
 const Movies = () => {
-  const { loading, data, error } = useFetch<MovieType[]>(
-    '/movies.json'
-  );
+  const { loading, data, error } = useFetch<MovieType[]>('/movies.json');
   const [selected, setSelected] = useState<MovieType | null>(null);
 
   if (loading) {
