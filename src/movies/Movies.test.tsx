@@ -9,7 +9,7 @@ import {
 
 import Movies from './Movies';
 
-jest.mock('./useAbortableFetch', () => () => ({
+jest.mock('use-abortable-fetch', () => () => ({
   loading: false,
   data: [
     {

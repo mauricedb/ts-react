@@ -1,5 +1,5 @@
-import React, { Component, lazy, Suspense, useState } from 'react';
-import useFetch from './useAbortableFetch';
+import React, { useState } from 'react';
+import useFetch from 'use-abortable-fetch';
 
 import MovieType from './MovieType';
 import Loading from './Loading';

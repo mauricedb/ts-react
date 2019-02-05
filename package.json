@@ -11,7 +11,8 @@
     "react": "^16.8.0-alpha.1",
     "react-dom": "^16.8.0-alpha.1",
     "react-scripts": "2.1.3",
-    "typescript": "3.3.1"
+    "typescript": "3.3.1",
+    "use-abortable-fetch": "^0.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,7 +20,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prettier": "prettier --write {src,public}/**/*.{js,ts,jsx,tsx,css,json,html}"
-
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -9625,6 +9625,11 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
+use-abortable-fetch@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-0.5.2.tgz#009f5241794a2e938e638718565f23c3cc6367f4"
+  integrity sha512-n+SQUDukxsMjgGTgxrBhcWcwip9rf6qHIpDBeNIJZjt+Ne2AsVc7toSX8mJirwLVHwSt8qZiyuJPI2uAq2cZaw==
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
