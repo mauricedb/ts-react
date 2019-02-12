@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Counter from './Counter/Counter';
 import Person from './Person/Person';
 import Movies from './movies/Movies';
+import MovieEditor from './movie-editor/MovieEditor';
 
 class App extends Component {
   render() {
@@ -13,7 +14,8 @@ class App extends Component {
         {/* <Counter />
         <Counter amount={2} />
         <Person /> */}
-        <Movies />
+        {/* <Movies /> */}
+        <MovieEditor />
       </div>
     );
   }
