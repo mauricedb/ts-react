@@ -927,10 +927,10 @@
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.1.tgz#8945411140e7cdfd5ea76380e5f5fa7bf17646ea"
   integrity sha512-4KNToPz5SAVa0GZrYAL3Q43p5MY/QBmYclYAmqPeqAmbgQ4lXkgKK0mYtr9S+N2Az0JvFaYJECztHZuFGhG3zw==
 
-"@types/node@10.12.21":
-  version "10.12.21"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.21.tgz#7e8a0c34cf29f4e17a36e9bd0ea72d45ba03908e"
-  integrity sha512-CBgLNk4o3XMnqMc0rhb6lc77IwShMEglz05deDcn2lQxyXEZivfwgYJu7SMha9V5XcrP6qZuevTHV/QrN2vjKQ==
+"@types/node@10.12.22":
+  version "10.12.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.22.tgz#eb2a8a1c24ee4a59cf87549cc67d60976ebaebd2"
+  integrity sha512-sozsyYqmHUD1OKzMb61UH4Es1oMLLA4g4eX6Zu1i8ZpG1sTlmZClL9ZU9GuNQQ2fHDKmaRUWlDSvzQ/aIDaIiQ==
 
 "@types/prop-types@*":
   version "15.5.8"
