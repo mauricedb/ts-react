@@ -9701,10 +9701,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-abortable-fetch@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-2.0.0.tgz#2809e753a565fffb507403346e08efd714dea8f0"
-  integrity sha512-JCQuhQSFlUO04ULBsnXn+pfffWBtQ6ADT01+n0YLz2n0wA4hGrccnkyQIqS8lRGBX3aNOMH9gfRDvTAf4GvkDA==
+use-abortable-fetch@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-2.2.0.tgz#b651e21ce3f57bb4eff1f65e64068b37773e85f5"
+  integrity sha512-GzRnLdfKmHUQesgv2igRP5b6NOse3w3QHJslFewv/5EeiFWQOD3fSK2lY99L492lAWE/g5OpbeBjTVDtTbOKAw==
 
 use@^3.1.0:
   version "3.1.1"
