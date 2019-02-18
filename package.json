@@ -9,7 +9,7 @@
     "use-abortable-fetch": "2.2.0"
   },
   "devDependencies": {
-    "@types/jest": "24.0.1",
+    "@types/jest": "24.0.2",
     "@types/node": "11.9.1",
     "@types/react": "16.8.3",
     "@types/react-dom": "16.8.1",
