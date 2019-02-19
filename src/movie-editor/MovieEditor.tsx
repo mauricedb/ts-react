@@ -66,23 +66,37 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
     <Form>
       <h2>Movie editor</h2>
 
-      <div>
-        <label htmlFor="title">Title:</label>
-        <Field id="title" name="title" />
+      <div className="form-group">
+        <label htmlFor="title" className="form-label">
+          Title:
+        </label>
+        <Field id="title" name="title" className="form-control" />
       </div>
 
-      <div>
-        <label htmlFor="criticsConsensus">Critics Consensus:</label>
+      <div className="form-group">
+        <label htmlFor="criticsConsensus" className="form-label">
+          Critics Consensus:
+        </label>
         <Field
           id="criticsConsensus"
           component="textarea"
+          rows={5}
           name="criticsConsensus"
+          className="form-control"
         />
       </div>
 
-      <div>
-        <label htmlFor="synopsis">Synopsis:</label>
-        <Field id="synopsis" component="textarea" name="synopsis" />
+      <div className="form-group">
+        <label htmlFor="synopsis" className="form-label">
+          Synopsis:
+        </label>
+        <Field
+          id="synopsis"
+          component="textarea"
+          rows={5}
+          name="synopsis"
+          className="form-control"
+        />
       </div>
 
       <div>

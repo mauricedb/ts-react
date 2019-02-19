@@ -16,14 +16,24 @@ const CastMember = <P extends {}>({
   const characters: string[] = getIn(formik.values, `${baseName}characters`);
 
   return (
-    <div>
-      <div>
-        <label htmlFor="cast-name">Name:</label>
-        <Field id="cast-name" name={`${baseName}name`} />
-        <button onClick={remove}>X</button>
+    <div className="form-group">
+      <label htmlFor="cast-name" className="form-label">
+        Name:
+      </label>
+      <div className="input-group">
+        <Field
+          id="cast-name"
+          name={`${baseName}name`}
+          className="form-control"
+        />
+        <div className="input-group-append">
+          <button onClick={remove} className="btn btn-outline-secondary">
+            ✗
+          </button>
+        </div>
       </div>
       <div>
-        <label>Characters: </label>
+        <label>Characters:&nbsp;</label>
         <span>{characters.join(', ')}</span>
       </div>
     </div>
