@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   ArrayHelpers,
-  Field,
   FieldArray,
   Form,
   FormikProps,
@@ -12,6 +11,7 @@ import { Movie } from './MovieType';
 import CastMember from './CastMember';
 import LabeledInput from './LabeledInput';
 import LabeledTextArea from './LabeledTextArea';
+import AudienceScore from './AudienceScore';
 
 const initialMovie: Movie = {
   id: 771028554,
@@ -69,6 +69,8 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
       <h2>Movie editor</h2>
 
       <LabeledInput name="title" label="Title:" />
+      <LabeledInput name="ratings.criticsScore" label="Critics score:" />
+      <AudienceScore />
 
       <LabeledTextArea
         name="criticsConsensus"
