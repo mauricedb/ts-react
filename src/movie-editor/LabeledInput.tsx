@@ -1,4 +1,5 @@
 import React, { InputHTMLAttributes } from 'react';
+import classNames from 'classnames';
 import { Field } from 'formik';
 
 type LabeledInputProps = {
@@ -9,6 +10,7 @@ type LabeledInputProps = {
 const LabeledInput = ({
   name,
   label,
+  className,
   ...props
 }: LabeledInputProps & InputHTMLAttributes<HTMLInputElement>) => {
   return (
@@ -17,7 +19,12 @@ const LabeledInput = ({
         {label}
       </label>
 
-      <Field id={name} name={name} className="form-control" {...props} />
+      <Field
+        id={name}
+        name={name}
+        className={classNames('form-control', className)}
+        {...props}
+      />
     </div>
   );
 };

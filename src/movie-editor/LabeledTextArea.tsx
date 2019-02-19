@@ -1,5 +1,6 @@
 import React, { TextareaHTMLAttributes } from 'react';
 import { Field } from 'formik';
+import classNames from 'classnames';
 
 type LabeledTextAreaProps = {
   name: string;
@@ -9,7 +10,9 @@ type LabeledTextAreaProps = {
 const LabeledTextArea = ({
   name,
   label,
-  rows = 5
+  rows = 5,
+  className,
+  ...props
 }: LabeledTextAreaProps & TextareaHTMLAttributes<HTMLTextAreaElement>) => {
   return (
     <div className="form-group">
@@ -22,7 +25,8 @@ const LabeledTextArea = ({
         name={name}
         component="textarea"
         rows={rows}
-        className="form-control"
+        className={classNames('form-control', className)}
+        {...props}
       />
     </div>
   );
