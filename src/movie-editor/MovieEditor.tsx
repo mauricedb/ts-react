@@ -103,5 +103,9 @@ MovieEditor.displayName = 'MovieEditor';
 export default withFormik<{}, Movie>({
   mapPropsToValues: () => initialMovie,
   handleSubmit: () => {},
+  validate: values => ({
+    title: values.title ? undefined : 'The title is required',
+    synopsis: values.synopsis ? undefined : 'The synopsis is required'
+  }),
   displayName: 'withFormik(MovieEditor)'
 })(MovieEditor);
