@@ -10,6 +10,8 @@ import {
 
 import { Movie } from './MovieType';
 import CastMember from './CastMember';
+import LabeledInput from './LabeledInput';
+import LabeledTextArea from './LabeledTextArea';
 
 const initialMovie: Movie = {
   id: 771028554,
@@ -66,38 +68,15 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
     <Form>
       <h2>Movie editor</h2>
 
-      <div className="form-group">
-        <label htmlFor="title" className="form-label">
-          Title:
-        </label>
-        <Field id="title" name="title" className="form-control" />
-      </div>
+      <LabeledInput name="title" label="Title:" />
 
-      <div className="form-group">
-        <label htmlFor="criticsConsensus" className="form-label">
-          Critics Consensus:
-        </label>
-        <Field
-          id="criticsConsensus"
-          component="textarea"
-          rows={5}
-          name="criticsConsensus"
-          className="form-control"
-        />
-      </div>
+      <LabeledTextArea
+        name="criticsConsensus"
+        label="Critics Consensus:"
+        rows={3}
+      />
 
-      <div className="form-group">
-        <label htmlFor="synopsis" className="form-label">
-          Synopsis:
-        </label>
-        <Field
-          id="synopsis"
-          component="textarea"
-          rows={5}
-          name="synopsis"
-          className="form-control"
-        />
-      </div>
+      <LabeledTextArea name="synopsis" label="Synopsis:" />
 
       <div>
         <FieldArray name="abridgedCast">

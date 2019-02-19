@@ -7,7 +7,7 @@ import MovieEditor from './movie-editor/MovieEditor';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <header className="text-center">
           <h1>React & TypeScript</h1>
         </header>
