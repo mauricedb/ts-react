@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "4.3.1",
+    "classnames": "^2.2.6",
     "formik": "1.5.1",
     "react": "16.8.2",
     "react-bootstrap": "1.0.0-beta.5",
@@ -11,6 +12,7 @@
     "use-abortable-fetch": "2.2.0"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.7",
     "@types/jest": "24.0.2",
     "@types/node": "11.9.1",
     "@types/react": "16.8.3",
@@ -18,8 +20,8 @@
     "jest-dom": "3.1.2",
     "prettier": "1.16.4",
     "react-scripts": "2.1.5",
-    "typescript": "3.3.3",
-    "react-testing-library": "5.9.0"
+    "react-testing-library": "5.9.0",
+    "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
