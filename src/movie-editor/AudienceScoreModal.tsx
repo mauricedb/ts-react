@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, ReactElement } from 'react';
 import { Modal } from 'react-bootstrap';
-import AudienceScoreModalContent from './AudienceScoreModalContent';
 
 type AudienceScoreModalProps = {
-  audienceScore: number;
-  onSave: (score: number) => void;
+  children: ReactElement;
 };
 
-const AudienceScoreModal = ({
-  audienceScore,
-  onSave
-}: AudienceScoreModalProps) => {
+const AudienceScoreModal = ({ children }: AudienceScoreModalProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   return (
@@ -23,11 +18,9 @@ const AudienceScoreModal = ({
       </button>
 
       <Modal keyboard={false} show={isModalOpen}>
-        <AudienceScoreModalContent
-          audienceScore={audienceScore}
-          onSave={onSave}
-          closeModal={() => setModalOpen(false)}
-        />
+        {React.cloneElement(children, {
+          closeModal: () => setModalOpen(false)
+        })}
       </Modal>
     </>
   );

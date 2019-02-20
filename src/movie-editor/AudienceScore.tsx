@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { Modal, Button } from 'react-bootstrap';
 import LabeledInput from './LabeledInput';
 import AudienceScoreModal from './AudienceScoreModal';
+import AudienceScoreModalContent from './AudienceScoreModalContent';
 type AudienceScoreProps = {};
 
 const AudienceScore = ({
@@ -37,10 +38,12 @@ const AudienceScore = ({
           {...props}
         />
         <div className="input-group-append">
-          <AudienceScoreModal
-            audienceScore={audienceScore}
-            onSave={score => formik.setFieldValue(name, score)}
-          />
+          <AudienceScoreModal>
+            <AudienceScoreModalContent
+              audienceScore={audienceScore}
+              onSave={score => formik.setFieldValue(name, score)}
+            />
+          </AudienceScoreModal>
         </div>
       </div>
       {error && touched && <div className="invalid-feedback">{error}</div>}

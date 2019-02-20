@@ -1,15 +1,12 @@
 import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import {
-  Formik,
-  FormikProps,
-} from 'formik';
+import { Formik, FormikProps } from 'formik';
 import LabeledInput from './LabeledInput';
 
 type AudienceScoreModalContentProps = {
   audienceScore: number;
   onSave: (score: number) => void;
-  closeModal: () => void;
+  closeModal?: () => void;
 };
 
 type AudienceScoreModalContentState = {
@@ -31,8 +28,10 @@ const AudienceScoreModalContent = ({
         const score = sum / values.audienceScores.length;
 
         onSave(score);
-        closeModal();
 
+        if (closeModal) {
+          closeModal();
+        }
       }}
       render={({
         values,
