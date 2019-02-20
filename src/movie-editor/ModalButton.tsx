@@ -1,11 +1,12 @@
 import React, { useState, ReactElement } from 'react';
 import { Modal } from 'react-bootstrap';
 
-type AudienceScoreModalProps = {
+type ModalButtonProps = {
+  label: string;
   children: ReactElement;
 };
 
-const AudienceScoreModal = ({ children }: AudienceScoreModalProps) => {
+const ModalButton = ({ children, label }: ModalButtonProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   return (
@@ -14,7 +15,7 @@ const AudienceScoreModal = ({ children }: AudienceScoreModalProps) => {
         onClick={() => setModalOpen(true)}
         className="btn btn-outline-secondary"
       >
-        📖
+        {label}
       </button>
 
       <Modal keyboard={false} show={isModalOpen}>
@@ -26,4 +27,4 @@ const AudienceScoreModal = ({ children }: AudienceScoreModalProps) => {
   );
 };
 
-export default AudienceScoreModal;
+export default ModalButton;

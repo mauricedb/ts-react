@@ -1,9 +1,7 @@
 import React, { InputHTMLAttributes, useState } from 'react';
 import { connect, Field, FormikContext, getIn, withFormik } from 'formik';
 import classNames from 'classnames';
-import { Modal, Button } from 'react-bootstrap';
-import LabeledInput from './LabeledInput';
-import AudienceScoreModal from './AudienceScoreModal';
+import ModalButton from './ModalButton';
 import AudienceScoreModalContent from './AudienceScoreModalContent';
 type AudienceScoreProps = {};
 
@@ -38,12 +36,12 @@ const AudienceScore = ({
           {...props}
         />
         <div className="input-group-append">
-          <AudienceScoreModal>
+          <ModalButton label="📖">
             <AudienceScoreModalContent
               audienceScore={audienceScore}
               onSave={score => formik.setFieldValue(name, score)}
             />
-          </AudienceScoreModal>
+          </ModalButton>
         </div>
       </div>
       {error && touched && <div className="invalid-feedback">{error}</div>}

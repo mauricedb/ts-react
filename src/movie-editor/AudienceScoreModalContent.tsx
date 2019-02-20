@@ -25,13 +25,10 @@ const AudienceScoreModalContent = ({
       }}
       onSubmit={values => {
         const sum = values.audienceScores.reduce((p, c) => p + c, 0);
-        const score = sum / values.audienceScores.length;
+        const score = Math.round(sum / values.audienceScores.length);
 
         onSave(score);
-
-        if (closeModal) {
-          closeModal();
-        }
+        closeModal!();
       }}
       render={({
         values,
@@ -54,12 +51,7 @@ const AudienceScoreModalContent = ({
             <pre>{JSON.stringify(values, null, 2)}</pre>
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              variant="primary"
-              onClick={() => {
-                submitForm();
-              }}
-            >
+            <Button variant="primary" onClick={submitForm}>
               Save
             </Button>
             <Button variant="secondary" onClick={closeModal}>
