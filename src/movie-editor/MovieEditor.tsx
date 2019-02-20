@@ -12,6 +12,7 @@ import CastMember from './CastMember';
 import LabeledInput from './LabeledInput';
 import LabeledTextArea from './LabeledTextArea';
 import AudienceScore from './AudienceScore';
+import Debug from './Debug';
 
 const initialMovie: Movie = {
   id: 771028554,
@@ -81,7 +82,7 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
       <LabeledTextArea name="synopsis" label="Synopsis:" />
 
       <div>
-        <FieldArray name="abridgedCast">
+        <FieldArray name="abridgedCast" >
           {(arrayHelpers: ArrayHelpers) =>
             values.abridgedCast.map((cast, index) => (
               <CastMember
@@ -94,8 +95,7 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
         </FieldArray>
       </div>
 
-      <hr />
-      <pre>{JSON.stringify(values, null, 2)}</pre>
+      <Debug />
     </Form>
   );
 };

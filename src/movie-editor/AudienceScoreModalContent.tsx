@@ -2,6 +2,7 @@ import React from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { Formik, FormikProps } from 'formik';
 import LabeledInput from './LabeledInput';
+import Debug from './Debug';
 
 type AudienceScoreModalContentProps = {
   audienceScore: number;
@@ -32,6 +33,8 @@ const AudienceScoreModalContent = ({
       }}
       render={({
         values,
+        dirty,
+        isValid,
         submitForm
       }: FormikProps<AudienceScoreModalContentState>) => (
         <>
@@ -47,11 +50,14 @@ const AudienceScoreModalContent = ({
                 label="Audience score:"
               />
             ))}
-            <hr />
-            <pre>{JSON.stringify(values, null, 2)}</pre>
+            <Debug />
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="primary" onClick={submitForm}>
+            <Button
+              variant="primary"
+              onClick={submitForm}
+              disabled={!dirty || !isValid}
+            >
               Save
             </Button>
             <Button variant="secondary" onClick={closeModal}>
