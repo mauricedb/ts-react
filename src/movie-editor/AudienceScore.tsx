@@ -39,9 +39,7 @@ const AudienceScore = ({
         <div className="input-group-append">
           <AudienceScoreModal
             audienceScore={audienceScore}
-            onSave={(score: number) => {
-              formik.setFieldValue(name, score);
-            }}
+            onSave={score => formik.setFieldValue(name, score)}
           />
         </div>
       </div>
