@@ -35,7 +35,8 @@ const AudienceScoreModalContent = ({
         values,
         dirty,
         isValid,
-        submitForm
+        submitForm,
+        resetForm
       }: FormikProps<AudienceScoreModalContentState>) => (
         <>
           <Modal.Header>
@@ -59,6 +60,9 @@ const AudienceScoreModalContent = ({
               disabled={!dirty || !isValid}
             >
               Save
+            </Button>
+            <Button variant="outline-warning" onClick={() => resetForm()}>
+              Reset
             </Button>
             <Button variant="secondary" onClick={closeModal}>
               Cancel
