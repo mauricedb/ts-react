@@ -1,5 +1,6 @@
 import React from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 import { Formik, FormikProps } from 'formik';
 import LabeledInput from './LabeledInput';
 import Debug from './Debug';
@@ -39,7 +40,7 @@ const AudienceScoreModalContent = ({
         resetForm
       }: FormikProps<AudienceScoreModalContentState>) => (
         <>
-          <Modal.Header>
+          <Modal.Header closeButton>
             <Modal.Title>Audience score</Modal.Title>
           </Modal.Header>
           <Modal.Body>
