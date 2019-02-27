@@ -16,8 +16,8 @@ class App extends Component {
         {/* <Counter amount={2} /> */}
         {/* <Person /> */}
         {/* <Movies /> */}
-        {/* <MovieEditor /> */}
-        <ShapeEditor />
+        <MovieEditor />
+        {/* <ShapeEditor /> */}
       </div>
     );
   }

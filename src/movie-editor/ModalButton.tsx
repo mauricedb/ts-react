@@ -1,22 +1,29 @@
-import React, { useState, ReactElement } from 'react';
-import { Modal } from 'react-bootstrap';
+import React, { useState, ReactElement, ButtonHTMLAttributes } from 'react';
+import { Modal, Button } from 'react-bootstrap';
+import classNames from 'classnames';
 
 type ModalButtonProps = {
   label: string;
   children: ReactElement;
 };
 
-const ModalButton = ({ children, label }: ModalButtonProps) => {
+const ModalButton = ({
+  children,
+  label,
+  className,
+  ...props
+}: ModalButtonProps & ButtonHTMLAttributes<HTMLButtonElement>) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <button
+      <Button
+        variant="outline-secondary"
+        className={className}
         onClick={() => setModalOpen(true)}
-        className="btn btn-outline-secondary"
       >
         {label}
-      </button>
+      </Button>
 
       <Modal keyboard={false} show={isModalOpen}>
         {React.cloneElement(children, {

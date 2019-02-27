@@ -5,12 +5,16 @@ import classNames from 'classnames';
 type LabeledTextAreaProps = {
   name: string;
   label: string;
+  controlClassName?: string;
+  labelClassName?: string;
 };
 
 const LabeledTextArea = ({
   name,
   label,
   rows = 5,
+  controlClassName,
+  labelClassName,
   className,
   formik,
   ...props
@@ -22,21 +26,24 @@ const LabeledTextArea = ({
   const touched = getIn(formik.touched, name);
 
   return (
-    <div className="form-group">
-      <label htmlFor={name} className="form-label">
+    <div className={classNames('form-group', className)}>
+      <label
+        htmlFor={name}
+        className={classNames('form-label', labelClassName)}
+      >
         {label}
       </label>
 
       <Field
+        {...props}
         id={name}
         name={name}
         component="textarea"
         rows={rows}
-        className={classNames('form-control', className, {
+        className={classNames('form-control', controlClassName, {
           'is-invalid': error,
           'is-valid': !error
         })}
-        {...props}
       />
       {error && touched && <div className="invalid-feedback">{error}</div>}
     </div>
