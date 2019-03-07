@@ -38,39 +38,49 @@ const AudienceScoreModalContent = ({
         isValid,
         submitForm,
         resetForm
-      }: FormikProps<AudienceScoreModalContentState>) => (
-        <>
-          <Modal.Header closeButton>
-            <Modal.Title>Audience score</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            {values.audienceScores.map((_, index) => (
-              <LabeledInput
-                key={index}
-                type="number"
-                name={`audienceScores.${index}`}
-                label="Audience score:"
-              />
-            ))}
-            <Debug />
-          </Modal.Body>
-          <Modal.Footer>
-            <Button
-              variant="primary"
-              onClick={submitForm}
-              disabled={!dirty || !isValid}
-            >
-              Save
-            </Button>
-            <Button variant="outline-warning" onClick={() => resetForm()}>
-              Reset
-            </Button>
-            <Button variant="secondary" onClick={closeModal}>
-              Cancel
-            </Button>
-          </Modal.Footer>
-        </>
-      )}
+      }: FormikProps<AudienceScoreModalContentState>) => {
+        const isWindows = navigator.platform === 'Win32';
+        const saveButton = (
+          <Button
+            variant="primary"
+            onClick={submitForm}
+            disabled={!dirty || !isValid}
+          >
+            Save
+          </Button>
+        );
+        const cancelButton = (
+          <Button variant="secondary" onClick={closeModal}>
+            Cancel
+          </Button>
+        );
+
+        return (
+          <>
+            <Modal.Header closeButton>
+              <Modal.Title>Audience score</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              {values.audienceScores.map((_, index) => (
+                <LabeledInput
+                  key={index}
+                  type="number"
+                  name={`audienceScores.${index}`}
+                  label="Audience score:"
+                />
+              ))}
+              <Debug />
+            </Modal.Body>
+            <Modal.Footer>
+              {isWindows ? saveButton : cancelButton}
+              <Button variant="outline-warning" onClick={() => resetForm()}>
+                Reset
+              </Button>
+              {isWindows ? cancelButton : saveButton}
+            </Modal.Footer>
+          </>
+        );
+      }}
     />
   );
 };
