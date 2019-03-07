@@ -1,6 +1,23 @@
 import React from 'react';
 import { FormikConsumer } from 'formik';
 
+var replacer = function(this: any, key: string, value: any) {
+  if (this[key] instanceof Date) {
+    const date: Date = this[key];
+
+    return {
+      year: date.getFullYear(),
+      month: date.getMonth(),
+      date: date.getDate(),
+      hours: date.getHours(),
+      minutes: date.getMinutes(),
+      seconds: date.getSeconds()
+    };
+  }
+
+  return value;
+};
+
 const Debug = () => (
   <div
     style={{
@@ -34,7 +51,7 @@ const Debug = () => (
             overflowX: 'scroll'
           }}
         >
-          {JSON.stringify(rest, null, 2)}
+          {JSON.stringify(rest, replacer, 2)}
         </pre>
       )}
     </FormikConsumer>
