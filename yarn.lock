@@ -999,6 +999,11 @@
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.7.tgz#fb68cc9be8487e6ea5b13700e759bfbab7e0fefd"
   integrity sha512-rzOhiQ55WzAiFgXRtitP/ZUT8iVNyllEpylJ5zHzR4vArUvMB39GTk+Zon/uAM0JxEFAWnwsxC2gH8s+tZ3Myg==
 
+"@types/content-type@1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@types/content-type/-/content-type-1.1.3.tgz#3688bd77fc12f935548eef102a4e34c512b03a07"
+  integrity sha512-pv8VcFrZ3fN93L4rTNIbbUzdkzjEyVMp5mPVjsFfOYTDOZMZiZ8P1dhu+kEv3faYyKzZgLlSvnyQNFg+p/v5ug==
+
 "@types/history@*":
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.2.tgz#0e670ea254d559241b6eeb3894f8754991e73220"
@@ -1015,6 +1020,18 @@
   integrity sha512-Q+odXTGshlsr9MK75ZBPfiwpo5oDH6KvB+YOSIesc3phbhTRAMWewS9+NywXUSXV/OQzS1L+kq1BLp9o8DmwIA==
   dependencies:
     "@types/jest-diff" "*"
+
+"@types/jest@^24.0.9":
+  version "24.0.11"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-24.0.11.tgz#1f099bea332c228ea6505a88159bfa86a5858340"
+  integrity sha512-2kLuPC5FDnWIDvaJBzsGTBQaBbnDweznicvK7UGYzlIJP4RJR2a4A/ByLUXEyEgag6jz8eHdlWExGDtH3EYUXQ==
+  dependencies:
+    "@types/jest-diff" "*"
+
+"@types/media-typer@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@types/media-typer/-/media-typer-0.3.0.tgz#b9fc39fdceb066463c4c29408c44f51252727d07"
+  integrity sha512-Fk34eOs6nHW7S81Ik67dRfFYD6DNFl9MnwvoIIs2a+IUFtG81jBjZZZolQgAmI+dNWaU8NFOeN5XGIOAuzSTyQ==
 
 "@types/node@*":
   version "11.9.5"
@@ -2587,7 +2604,7 @@ content-disposition@0.5.2:
   resolved "https://registry.yarnpkg.com/content-disposition/-/content-disposition-0.5.2.tgz#0cf68bb9ddf5f2be7961c3a85178cb85dba78cb4"
   integrity sha1-DPaLud318r55YcOoUXjLhdunjLQ=
 
-content-type@~1.0.4:
+content-type@1.0.4, content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
@@ -6287,6 +6304,11 @@ media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
+
+media-typer@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-1.0.1.tgz#e39d677e19a011c52d2681f430d1adafb299dd41"
+  integrity sha512-v42gdPIuqYCoDVH5OiaKsVrv6aJqdMWJzl8KCyDs/KeDyBveYp3Wxq4UWJfsWjkSZUNC0xlLfDlLCPa1h/oo+g==
 
 mem@^1.1.0:
   version "1.1.0"
@@ -10019,10 +10041,16 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-abortable-fetch@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-2.2.0.tgz#b651e21ce3f57bb4eff1f65e64068b37773e85f5"
-  integrity sha512-GzRnLdfKmHUQesgv2igRP5b6NOse3w3QHJslFewv/5EeiFWQOD3fSK2lY99L492lAWE/g5OpbeBjTVDtTbOKAw==
+use-abortable-fetch@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-2.4.0.tgz#431a15095f1ab041862854d48c54f3ac1cd928e2"
+  integrity sha512-Wbprw0+ROhILEW/rbp0vM1a6G9T7Slu7w2oEmMvGau1pkISbr6NfagCN/GNWOHDw5pQh8/RN25R1uwXjWaj7qw==
+  dependencies:
+    "@types/content-type" "1.1.3"
+    "@types/jest" "^24.0.9"
+    "@types/media-typer" "0.3.0"
+    content-type "1.0.4"
+    media-typer "1.0.1"
 
 use-formik-side-effects@^0.1.1:
   version "0.1.1"
