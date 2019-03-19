@@ -1,4 +1,5 @@
 import React, { Component, ComponentType, ErrorInfo } from 'react';
+import * as Sentry from '@sentry/browser';
 
 type ErrorBoundaryState = {
   error: Error | null;
@@ -20,6 +21,13 @@ export default function withErrorBoundary<P>(
       console.warn(
         `Error:\n\t${error}\nComponent stack:${info.componentStack}`
       );
+
+      Sentry.withScope(scope => {
+        Object.keys(info).forEach(key => {
+          scope.setExtra(key, (info as any)[key]);
+        });
+        Sentry.captureException(error);
+      });
     }
 
     render() {

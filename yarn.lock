@@ -892,6 +892,58 @@
     typed-styles "^0.0.5"
     warning "^3.0.0"
 
+"@sentry/browser@^4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-4.6.4.tgz#94e376be7bb313b6faf9e40950405897dd1c1605"
+  integrity sha512-w2ITpQbs2vTKS5vtPXDgeDyr+5C4lCnTXugJrqn8u8w/XaDb3vRogfMWpQcaUENllO5xdZSItSAAHsQucY/LvA==
+  dependencies:
+    "@sentry/core" "4.6.4"
+    "@sentry/types" "4.5.3"
+    "@sentry/utils" "4.6.4"
+    tslib "^1.9.3"
+
+"@sentry/core@4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@sentry/core/-/core-4.6.4.tgz#7236e08115423b81b96a13c2c37f29bcc1477745"
+  integrity sha512-NGl2nkAaQ8dGqJAMS1Hb+7RyVjW4tmCbK6d7H/zKnOpBuU+qSW4XCm2NoGLLa8qb4SZUPIBRv6U0ByvEQlGtqw==
+  dependencies:
+    "@sentry/hub" "4.6.4"
+    "@sentry/minimal" "4.6.4"
+    "@sentry/types" "4.5.3"
+    "@sentry/utils" "4.6.4"
+    tslib "^1.9.3"
+
+"@sentry/hub@4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@sentry/hub/-/hub-4.6.4.tgz#2bd5d67ccd43d4f5afc45005a330a11b14d46cea"
+  integrity sha512-R3ACxUZbrAMP6vyIvt1k4bE3OIyg1CzbEhzknKljPrk1abVmJVP7W/X1vBysdRtI3m/9RjOSO7Lxx3XXqoHoQg==
+  dependencies:
+    "@sentry/types" "4.5.3"
+    "@sentry/utils" "4.6.4"
+    tslib "^1.9.3"
+
+"@sentry/minimal@4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@sentry/minimal/-/minimal-4.6.4.tgz#dc4bb47df90dad6025d832852ac11fe29ed50147"
+  integrity sha512-jZa9mfzDzJI98tg6uxFG3gdVLyz0nOHpLP9H8Kn/BelZ7WEG/ogB8PDi1hI9JvCTXAr8kV81mEecldADa9L9Yg==
+  dependencies:
+    "@sentry/hub" "4.6.4"
+    "@sentry/types" "4.5.3"
+    tslib "^1.9.3"
+
+"@sentry/types@4.5.3":
+  version "4.5.3"
+  resolved "https://registry.yarnpkg.com/@sentry/types/-/types-4.5.3.tgz#3350dce2b7f9b936a8c327891c12e3aef7bd8852"
+  integrity sha512-7ll1PAFNjrBNX9rzy3P2qAQrpQwHaDO3uKj735qsnGw34OtAS8Xr8WYrjI14f9fMPa/XIeWvMPb4GMic28V/ag==
+
+"@sentry/utils@4.6.4":
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/@sentry/utils/-/utils-4.6.4.tgz#ca254c142b519b4f20d63c2f9edf1a89966be36f"
+  integrity sha512-Tc5R46z7ve9Z+uU34ceDoEUR7skfQgXVIZqjbrTQphgm6EcMSNdRfkK3SJYZL5MNKiKhb7Tt/O3aPBy5bTZy6w==
+  dependencies:
+    "@sentry/types" "4.5.3"
+    tslib "^1.9.3"
+
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#8013f2af54a2b7d735f71560ff360d3a8176a87b"
@@ -1002,7 +1054,7 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
-"@types/classnames@^2.2.7":
+"@types/classnames@2.2.7":
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.7.tgz#fb68cc9be8487e6ea5b13700e759bfbab7e0fefd"
   integrity sha512-rzOhiQ55WzAiFgXRtitP/ZUT8iVNyllEpylJ5zHzR4vArUvMB39GTk+Zon/uAM0JxEFAWnwsxC2gH8s+tZ3Myg==
@@ -2377,7 +2429,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.6:
+classnames@2.2.6, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -10109,7 +10161,7 @@ use-abortable-fetch@2.4.0:
     content-type "1.0.4"
     media-typer "1.0.1"
 
-use-formik-side-effects@^0.1.1:
+use-formik-side-effects@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/use-formik-side-effects/-/use-formik-side-effects-0.1.1.tgz#4cb1dd6b72019af5cd2fa1a57f9f8539a01c2a79"
   integrity sha512-J/nkMQ2EYz8536KDhCjYtw8M3F/gyow81SkrDwkCPL7RjrMNqG4zEsdZyhLjV6CeVWTZ4QG2bcbO8aLZ+fLYRg==

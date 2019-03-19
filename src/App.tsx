@@ -7,6 +7,7 @@ import Person from './Person/Person';
 import Movies from './movies/Movies';
 import MovieEditor from './movie-editor/MovieEditor';
 import ShapeEditor from './shape-editor/ShapeEditor';
+import withErrorBoundary from './movies/withErrorBoundary';
 
 class App extends Component {
   render() {
@@ -53,4 +54,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withErrorBoundary(App);
