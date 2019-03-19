@@ -17,7 +17,7 @@ const Movies = () => {
     return <div className="error">{error.message}</div>;
   }
 
-  if (!data) {
+  if (!data || typeof data === 'string') {
     return null;
   }
 
