@@ -12,7 +12,7 @@
     "react-dom": "16.8.6",
     "react-router-dom": "5.0.0",
     "use-abortable-fetch": "2.6.2",
-    "use-formik-side-effects": "0.1.1"
+    "use-formik-side-effects": "0.3.0"
   },
   "devDependencies": {
     "@types/classnames": "2.2.7",
