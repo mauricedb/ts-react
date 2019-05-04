@@ -13,10 +13,12 @@ test('can render initial person', () => {
 });
 
 test('can render initial person', () => {
-  const { getByText, getByValue } = render(<Person />);
+  const { getByText, getByDisplayValue } = render(<Person />);
 
-  fireEvent.change(getByValue('Maurice'), { target: { value: 'Jack' } });
-  fireEvent.change(getByValue('de Beijer'), { target: { value: 'Murphy' } });
+  fireEvent.change(getByDisplayValue('Maurice'), { target: { value: 'Jack' } });
+  fireEvent.change(getByDisplayValue('de Beijer'), {
+    target: { value: 'Murphy' }
+  });
 
   expect(getByText('Hello Jack Murphy')).toBeInTheDocument();
 });
