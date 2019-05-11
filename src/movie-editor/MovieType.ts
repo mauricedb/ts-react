@@ -3,17 +3,17 @@ export type Rating = {
   audienceScore: number;
 };
 
+export type CastType = {
+  id: number;
+  name: string;
+  characters: string[];
+};
+
 export type Posters = {
   thumbnail: string;
   profile: string;
   detailed: string;
   original: string;
-};
-
-export type CastType = {
-  id: number;
-  name: string;
-  characters: string[];
 };
 
 export type Movie = {
