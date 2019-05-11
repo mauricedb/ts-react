@@ -6,12 +6,12 @@ type Action = {
   payload: any;
 };
 
-export type Person = typeof initialState;
-
 export const initialState = {
   firstName: 'Maurice',
   lastName: 'de Beijer'
 };
+
+export type Person = typeof initialState;
 
 export const createChangeFirstName = (firstName: string) => ({
   type: changeFirstName,

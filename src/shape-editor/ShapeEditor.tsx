@@ -1,8 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Formik, Field } from 'formik';
 import { FormikSideEffects } from 'use-formik-side-effects';
-import { ShapeEditorValues, initialShapeEditorValues } from './shapeEditorValues';
+import {
+  ShapeEditorValues,
+  initialShapeEditorValues
+} from './shapeEditorValues';
 import { shapeEditorValuesSideEffects } from './shapeEditorValuesSideEffects';
 
 const ShapeEditor = () => {

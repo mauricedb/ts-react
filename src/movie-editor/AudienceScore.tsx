@@ -1,5 +1,5 @@
-import React, { InputHTMLAttributes, useState } from 'react';
-import { connect, Field, FormikContext, getIn, withFormik } from 'formik';
+import React, { InputHTMLAttributes } from 'react';
+import { connect, Field, FormikContext, getIn } from 'formik';
 import classNames from 'classnames';
 import ModalButton from './ModalButton';
 import AudienceScoreModalContent from './AudienceScoreModalContent';

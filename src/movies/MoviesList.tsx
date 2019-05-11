@@ -1,4 +1,4 @@
-import React, { Component, lazy, Suspense, useState } from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import Loading from './Loading';
 import MovieType from './MovieType';
