@@ -82,7 +82,7 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
       <LabeledTextArea name="synopsis" label="Synopsis:" />
 
       <div>
-        <FieldArray name="abridgedCast" >
+        <FieldArray name="abridgedCast">
           {(arrayHelpers: ArrayHelpers) =>
             values.abridgedCast.map((cast, index) => (
               <CastMember
