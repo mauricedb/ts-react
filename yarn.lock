@@ -1117,10 +1117,10 @@
   resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.2.12.tgz#f3cc23096d3a3cd85e438716433ba5775b3f8234"
   integrity sha512-bRLach8/0316PQrx6ssswGdxytwakatLH2BN5sRpybXb6bkwBs2t3NfZ/N2rNZxPt3vFldHd0L4MYTg3eNt7Fw==
 
-"@sentry/browser@5.2.0":
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-5.2.0.tgz#400da9ccc3afe0c351e28978de7d6e1b8f8c1612"
-  integrity sha512-RIp+NZAP0CTDZbIsG8k5zGbimlMtTNRagub9dnQm6R0HmSL5+zxNoE7DH4MV3Xv5rFr8P0LCZyMTxwCgU1Y/3Q==
+"@sentry/browser@5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@sentry/browser/-/browser-5.2.1.tgz#a49cf79a2443fa4c857bb310e819003d49f4fa26"
+  integrity sha512-fQTqBD4/WTW+ZnQULxjA5sn2yx3mj9OgXCYjdilISd94uRTlLOCtY+gvTAljuOkM5LlGwnBRAs7/bSI2zSaQEg==
   dependencies:
     "@sentry/core" "5.2.0"
     "@sentry/types" "5.2.0"
@@ -1354,10 +1354,15 @@
   dependencies:
     "@types/jest-diff" "*"
 
-"@types/node@*", "@types/node@12.0.0":
+"@types/node@*":
   version "12.0.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.0.tgz#d11813b9c0ff8aaca29f04cbc12817f4c7d656e5"
   integrity sha512-Jrb/x3HT4PTJp6a4avhmJCDEVrPdqLfl3e8GGMbpkGGdwAV5UGlIs4vVEfsHHfylZVOKZWpOqmqFH8CbfOZ6kg==
+
+"@types/node@12.0.1":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.1.tgz#3dde31f8da274dfeb90e96abf55038fef46285f0"
+  integrity sha512-7sy7DKVJrCTbaAERJZq/CU12bzdmpjRr321/Ne9QmzhB3iZ//L16Cizcni5hHNbANxDbxwMb9EFoWkM8KPkp0A==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -4895,7 +4900,7 @@ https-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-1.0.0.tgz#ec06c10e0a34c0f2faf199f7fd7fc78fffd03c73"
   integrity sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
 
-husky@^2.2.0:
+husky@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/husky/-/husky-2.2.0.tgz#4dda4370ba0f145b6594be4a4e4e4d4c82a6f2d5"
   integrity sha512-lG33E7zq6v//H/DQIojPEi1ZL9ebPFt3MxUMD8MR0lrS2ljEPiuUUxlziKIs/o9EafF0chL7bAtLQkcPvXmdnA==
@@ -8062,7 +8067,7 @@ pretty-format@^24.0.0, pretty-format@^24.7.0, pretty-format@^24.8.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
-pretty-quick@^1.10.0:
+pretty-quick@1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/pretty-quick/-/pretty-quick-1.10.0.tgz#d86cc46fe92ed8cfcfba6a082ec5949c53858198"
   integrity sha512-uNvm2N3UWmnZRZrClyQI45hIbV20f5BpSyZY51Spbvn4APp9+XLyX4bCjWRGT3fGyVyQ/2/iw7dbQq1UUaq7SQ==
