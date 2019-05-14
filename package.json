@@ -21,7 +21,7 @@
     "@types/react": "16.8.17",
     "@types/react-dom": "16.8.4",
     "@types/react-router-dom": "4.3.3",
-    "husky": "2.2.0",
+    "husky": "2.3.0",
     "jest-dom": "3.2.2",
     "prettier": "1.17.0",
     "pretty-quick": "1.10.0",
