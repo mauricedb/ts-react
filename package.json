@@ -24,7 +24,7 @@
     "husky": "2.3.0",
     "jest-dom": "3.2.2",
     "prettier": "1.17.0",
-    "pretty-quick": "1.10.0",
+    "pretty-quick": "1.11.0",
     "react-scripts": "3.0.1",
     "react-testing-library": "7.0.1",
     "source-map-explorer": "1.8.0",
