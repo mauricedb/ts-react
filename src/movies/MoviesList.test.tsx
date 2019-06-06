@@ -5,7 +5,7 @@ import {
   fireEvent,
   cleanup,
   waitForElement
-} from 'react-testing-library';
+} from '@testing-library/react';
 
 import MoviesList from './MoviesList';
 import MovieType from './MovieType';
