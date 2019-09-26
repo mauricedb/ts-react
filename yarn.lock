@@ -10290,10 +10290,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-abortable-fetch@2.6.3:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-2.6.3.tgz#d27485ec6cf69dbe4f44d40271dd5d15ce347b15"
-  integrity sha512-Cxl00FCzddDeMsYhMvgU2DtoxlNgT0av0hdXFgTU5L+kml2hACL4CH7kAwL3T4l62bLu4+m9kazDjhTh8NI2sg==
+use-abortable-fetch@2.6.4:
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/use-abortable-fetch/-/use-abortable-fetch-2.6.4.tgz#112514bfa06540fda637095f7facf376dc5f9cc2"
+  integrity sha512-hze5lk8XMaSva/kZerzF6bwY+4b51C4cHiSGBLWqjPRXBCm4530QkJ6iXT+wOXeeRy08RBswjlMC1wW/DVWi8w==
   dependencies:
     content-type "1.0.4"
     media-typer "1.1.0"
