@@ -1,11 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import {
-  render,
-  fireEvent,
-  cleanup,
-  waitForElement
-} from '@testing-library/react';
+import { render, fireEvent, waitForElement } from '@testing-library/react';
 
 import Movies from './Movies';
 
@@ -30,8 +25,6 @@ jest.mock('use-abortable-fetch', () => () => ({
 }));
 
 describe('The Movies', () => {
-  afterEach(cleanup);
-
   test('can render movies', () => {
     const { getByText } = render(<Movies />);
 

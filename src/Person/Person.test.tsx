@@ -1,10 +1,8 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 import Person from './Person';
-
-afterEach(cleanup);
 
 test('can render initial person', () => {
   const { getByText } = render(<Person />);

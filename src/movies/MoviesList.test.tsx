@@ -1,11 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import {
-  render,
-  fireEvent,
-  cleanup,
-  waitForElement
-} from '@testing-library/react';
+import { render, fireEvent, waitForElement } from '@testing-library/react';
 
 import MoviesList from './MoviesList';
 import MovieType from './MovieType';
@@ -33,8 +28,6 @@ describe('The MoviesList', () => {
   beforeEach(() => {
     setSelected = jest.fn();
   });
-
-  afterEach(cleanup);
 
   test('can render with empty list', () => {
     render(
