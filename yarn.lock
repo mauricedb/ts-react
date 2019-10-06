@@ -10379,10 +10379,10 @@ use-abortable-fetch@2.6.5:
     content-type "1.0.4"
     media-typer "1.1.0"
 
-use-formik-side-effects@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/use-formik-side-effects/-/use-formik-side-effects-1.0.1.tgz#3b9ae5bfbb5d05d7424de8861ab964409e016aa7"
-  integrity sha512-zH2shFpeodg1dD+NC6ktXyzmOWRjKyTxwPBc5kV+FRnMjASM0X2NtEhQAupESGpn+KqHrrAL4BSASgAZxtsrjw==
+use-formik-side-effects@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/use-formik-side-effects/-/use-formik-side-effects-1.0.2.tgz#c8e4c9dbed1af9a01352c0064dde91a18647bebd"
+  integrity sha512-5pOCJNZS7+qy0D5jRea48hC4yu5/89Q4axo/qdmiuUW8MaBzUdXr7QD377Mo0y3dzr0XN1PCu9L+SdIM+3h9zQ==
 
 use@^3.1.0:
   version "3.1.1"
