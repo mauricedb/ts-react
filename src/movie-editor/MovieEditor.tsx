@@ -64,6 +64,10 @@ const initialMovie: Movie = {
   abridgedDirectors: ['Danny Boyle']
 };
 
+type MovieEditorProps = {
+  movie?: Movie;
+};
+
 const MovieEditor = ({ values }: FormikProps<Movie>) => {
   return (
     <Form>
@@ -102,8 +106,8 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
 
 MovieEditor.displayName = 'MovieEditor';
 
-export default withFormik<{}, Movie>({
-  mapPropsToValues: () => initialMovie,
+export default withFormik<MovieEditorProps, Movie>({
+  mapPropsToValues: props => props.movie || initialMovie,
   handleSubmit: () => {},
   validate: values => ({
     title: values.title ? undefined : 'The title is required',
