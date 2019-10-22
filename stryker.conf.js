@@ -9,6 +9,7 @@ module.exports = function(config) {
     coverageAnalysis: 'off',
     jest: {
       projectType: 'react'
-    }
+    },
+    tempDirName: 'stryker-tmp'
   });
 };
