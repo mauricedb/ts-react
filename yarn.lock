@@ -1514,10 +1514,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-router-dom@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.1.0.tgz#8baa84a7fa8c8e7797fb3650ca51f93038cb4caf"
-  integrity sha512-YCh8r71pL5p8qDwQf59IU13hFy/41fDQG/GeOI3y+xmD4o0w3vEPxE8uBe+dvOgMoDl0W1WUZsWH0pxc1mcZyQ==
+"@types/react-router-dom@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.1.1.tgz#77a2dae8ba6ff1df51d27517f7646127a51a1a3e"
+  integrity sha512-yXqWGaehta/cdmjvEQfCbHFX6l1c7QHuE5n2OfhcJ33ufbt55xhAKqQ0BmT24YM3s7OKwrrUUgY3FaSzO7be3Q==
   dependencies:
     "@types/history" "*"
     "@types/react" "*"
@@ -4572,10 +4572,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-formik@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/formik/-/formik-2.0.2.tgz#c8d6637be5c1b72a27ff3d972141263764a9968c"
-  integrity sha512-K5dHjebczKFPQd+TbJ26Otn/VtnDPKi067y5HLr0AEA5qa4PSdElAETCAehlk4j0y2eGkES6sEuVmL9myPxRRg==
+formik@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/formik/-/formik-2.0.3.tgz#7cf088b1a6e0ba21782b73a90453a78426959168"
+  integrity sha512-kYBvcxlsYSncY8OiJHD49C0UmoWXbgmIc9V1g3N1WwBJ7SMLk34QpcJDgroYd42K1cH+mSJlXhB7PlgTXTzlWg==
   dependencies:
     deepmerge "^2.1.1"
     hoist-non-react-statics "^3.3.0"
