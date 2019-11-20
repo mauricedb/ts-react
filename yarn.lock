@@ -1485,10 +1485,10 @@
   resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
-"@types/node@12.12.9":
-  version "12.12.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.9.tgz#0b5ae05516b757cbff2e82c04500190aef986c7b"
-  integrity sha512-kV3w4KeLsRBW+O2rKhktBwENNJuqAUQHS3kf4ia2wIaF/MN6U7ANgTsx7tGremcA0Pk3Yh0Hl0iKiLPuBdIgmw==
+"@types/node@12.12.10":
+  version "12.12.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.10.tgz#c8b49f4c428cced07d8758ec45285be6597fb4d8"
+  integrity sha512-rhG2F0v4nNMqcPM4dMSne7R9iBzehUnARYbJq7G36CoczcqjNWuriAy6kd6quT30ISmfBhIRFVYDMSLrBASHNw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -8802,10 +8802,10 @@ react-app-polyfill@^1.0.4:
     regenerator-runtime "0.13.3"
     whatwg-fetch "3.0.0"
 
-react-bootstrap@1.0.0-beta.15:
-  version "1.0.0-beta.15"
-  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0-beta.15.tgz#c029440691098497c967e97a3f241e16a04db777"
-  integrity sha512-DybdjxDxm3P2xncpHlxxTC/JXX1PGPj2ca0x8n8b+FQTKVqmmCmc0wokpjsSyaifxO5AX+yQzeTph52jNtHYkA==
+react-bootstrap@1.0.0-beta.16:
+  version "1.0.0-beta.16"
+  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0-beta.16.tgz#42da0314aee6754494e478687b8e6953de1aaf62"
+  integrity sha512-wjb+3CwviDWAaz4O3gQpd2XMDNqbOiqOOzpLm5aLPcp1wTsQsVRhyM+rTPmO3hYU8auA2eNpTYLz08/fAcMqDA==
   dependencies:
     "@babel/runtime" "^7.4.2"
     "@restart/context" "^2.1.4"
