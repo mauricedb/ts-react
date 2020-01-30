@@ -1551,12 +1551,13 @@
   dependencies:
     jest-diff "^24.3.0"
 
-"@types/jest@25.1.0":
-  version "25.1.0"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.1.0.tgz#b3955aa0be6057c65c0bfb11ac2ef1e078598d76"
-  integrity sha512-MYX8LpNQboef1NDZQTchM5poL8WITRVG/4/1XLK/Xsamjptsvgb8ELTRoXixBARi+a81mMT4n2hooqaydEOE9A==
+"@types/jest@25.1.1":
+  version "25.1.1"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-25.1.1.tgz#dcf65a8ee315b91ad39c0d358ae0ddc5602ab0e9"
+  integrity sha512-bKSZJYZJLzwaoVYNN4W3A0RvKNYsrLm5tsuXaMlfYDxKf4gY2sFrMYneCugNQWGg1gjPW+FHBwNrwPzEi4sIsw==
   dependencies:
     jest-diff "^25.1.0"
+    pretty-format "^25.1.0"
 
 "@types/json-schema@^7.0.3":
   version "7.0.3"
@@ -1573,10 +1574,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
   integrity sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
 
-"@types/node@13.5.1":
-  version "13.5.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.5.1.tgz#6fae50892d1841f4b38b298e2f78fb68c5960cb9"
-  integrity sha512-Jj2W7VWQ2uM83f8Ls5ON9adxN98MvyJsMSASYFuSvrov8RMRY64Ayay7KV35ph1TSGIJ2gG9ZVDdEq3c3zaydA==
+"@types/node@13.5.2":
+  version "13.5.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-13.5.2.tgz#3de53b55fd39efc428a901a0f6db31f761cfa131"
+  integrity sha512-Fr6a47c84PRLfd7M7u3/hEknyUdQrrBA6VoPmkze0tcflhU5UnpWEX2kn12ktA/lb+MNHSqFlSiPHIHsaErTPA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -10960,10 +10961,10 @@ use-abortable-fetch@2.6.6:
     content-type "1.0.4"
     media-typer "1.1.0"
 
-use-formik-side-effects@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/use-formik-side-effects/-/use-formik-side-effects-1.0.2.tgz#c8e4c9dbed1af9a01352c0064dde91a18647bebd"
-  integrity sha512-5pOCJNZS7+qy0D5jRea48hC4yu5/89Q4axo/qdmiuUW8MaBzUdXr7QD377Mo0y3dzr0XN1PCu9L+SdIM+3h9zQ==
+use-formik-side-effects@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/use-formik-side-effects/-/use-formik-side-effects-1.1.0.tgz#ec527018489e12a8d470943a6e367ed0d5d1b1de"
+  integrity sha512-vteofu2nuVfZCZ1oC/v2ZOIOjGEPYLf4/EZzswAuvgmcYuYPCLASQcJkFTcgvDcDhlO7oXNEiCCkpQL+hDJnIw==
 
 use@^3.1.0:
   version "3.1.1"
