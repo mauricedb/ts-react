@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import { render, fireEvent, waitForElement } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
 import Movies from './Movies';
 
@@ -28,15 +28,15 @@ describe('The Movies', () => {
   test('can render movies', () => {
     const { getByText } = render(<Movies />);
 
-    expect(getByText('A movie')).toBeInTheDocument();
-    expect(getByText('The movie')).toBeInTheDocument();
+    expect(getByText('A movie')).toBeVisible();
+    expect(getByText('The movie')).toBeVisible();
   });
 
   test('selects a movie when the card header is clicked', async () => {
-    const { getByText } = render(<Movies />);
+    const { getByText, findByText } = render(<Movies />);
 
     fireEvent.click(getByText('A movie'));
 
-    await waitForElement(() => getByText('genre one'));
+    expect(await findByText('genre one')).toBeVisible();
   });
 });

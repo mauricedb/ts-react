@@ -1,5 +1,5 @@
 import React, { InputHTMLAttributes } from 'react';
-import { connect, Field, FormikContext, getIn } from 'formik';
+import { connect, Field, FormikContextType, getIn } from 'formik';
 import classNames from 'classnames';
 
 type LabeledInputProps = {
@@ -19,7 +19,7 @@ const LabeledInput = ({
   ...props
 }: LabeledInputProps &
   InputHTMLAttributes<HTMLInputElement> & {
-    formik: FormikContext<any>;
+    formik: FormikContextType<any>;
   }) => {
   const error = getIn(formik.errors, name);
   const touched = getIn(formik.touched, name);

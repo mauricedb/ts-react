@@ -55,7 +55,7 @@ describe('The MoviesList', () => {
   });
 
   test('renders the genre when the movie is selected', async () => {
-    const { getByText } = render(
+    const { findByText } = render(
       <MoviesList
         movies={movies}
         selected={movies[0]}
@@ -63,9 +63,7 @@ describe('The MoviesList', () => {
       />
     );
 
-    await waitForElement(() => getByText('genre one'));
-
-    expect(getByText('genre one')).toBeInTheDocument();
+    expect(await findByText('genre one')).toBeInTheDocument();
   });
 
   test('selects a movie when the card header is clicked', () => {

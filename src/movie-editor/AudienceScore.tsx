@@ -1,5 +1,5 @@
 import React, { InputHTMLAttributes } from 'react';
-import { connect, Field, FormikContext, getIn } from 'formik';
+import { connect, Field, FormikContextType, getIn } from 'formik';
 import classNames from 'classnames';
 import ModalButton from './ModalButton';
 import AudienceScoreModalContent from './AudienceScoreModalContent';
@@ -11,7 +11,7 @@ const AudienceScore = ({
   ...props
 }: AudienceScoreProps &
   InputHTMLAttributes<HTMLInputElement> & {
-    formik: FormikContext<any>;
+    formik: FormikContextType<any>;
   }) => {
   const name = 'ratings.audienceScore';
   const audienceScore = getIn(formik.values, name);

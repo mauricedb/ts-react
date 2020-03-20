@@ -1,5 +1,5 @@
 import React, { TextareaHTMLAttributes } from 'react';
-import { connect, Field, FormikContext, getIn } from 'formik';
+import { connect, Field, FormikContextType, getIn } from 'formik';
 import classNames from 'classnames';
 
 type LabeledTextAreaProps = {
@@ -20,7 +20,7 @@ const LabeledTextArea = ({
   ...props
 }: LabeledTextAreaProps &
   TextareaHTMLAttributes<HTMLTextAreaElement> & {
-    formik: FormikContext<any>;
+    formik: FormikContextType<any>;
   }) => {
   const error = getIn(formik.errors, name);
   const touched = getIn(formik.touched, name);
