@@ -31,7 +31,7 @@ const AudienceScore = ({
           type="number"
           className={classNames('form-control', className, {
             'is-invalid': error,
-            'is-valid': !error
+            'is-valid': !error,
           })}
           {...props}
         />
@@ -39,7 +39,7 @@ const AudienceScore = ({
           <ModalButton label="📖">
             <AudienceScoreModalContent
               audienceScore={audienceScore}
-              onSave={score => formik.setFieldValue(name, score)}
+              onSave={(score) => formik.setFieldValue(name, score)}
             />
           </ModalButton>
         </div>
