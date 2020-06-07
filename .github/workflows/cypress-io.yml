@@ -1,4 +1,4 @@
-name: example-start
+name: Cypress tests
 on: [push]
 jobs:
   start:
