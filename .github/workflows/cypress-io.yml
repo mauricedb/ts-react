@@ -2,13 +2,10 @@ name: Cypress tests
 on: [push]
 jobs:
   start:
-    # example with web application build,
-    # server start and waiting for the server
-    # to respond before running tests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Cypress tests
         uses: cypress-io/github-action@v1
@@ -17,3 +14,15 @@ jobs:
           build: npm run build
           start: npm start
           wait-on: 'http://localhost:3000'
+
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+        # Test run video was always captured
+      - uses: actions/upload-artifact@v2
+        with:
+          name: cypress-videos
+          path: cypress/videos
