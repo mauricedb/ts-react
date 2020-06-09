@@ -1,5 +1,7 @@
 name: Cypress tests
+
 on: [push]
+
 jobs:
   start:
     runs-on: ubuntu-latest
@@ -10,11 +12,10 @@ jobs:
       - name: Cypress tests
         uses: cypress-io/github-action@v1
         with:
-          # working-directory: examples/start
-          build: npm run build
           start: npm start
           wait-on: 'http://localhost:3000'
 
+        # Test run screenshots if the run fails
       - uses: actions/upload-artifact@v2
         if: failure()
         with:
