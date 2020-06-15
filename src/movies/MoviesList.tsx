@@ -5,7 +5,7 @@ import MovieType from './MovieType';
 import MovieListCard from './MovieListCard';
 import classes from './MoviesList.module.css';
 
-const SelectedMovie = lazy(() => import('./SelectedMovie'));
+export const SelectedMovie = lazy(() => import('./SelectedMovie'));
 
 type MoviesListProps = {
   movies: MovieType[];

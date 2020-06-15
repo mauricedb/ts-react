@@ -1,8 +1,8 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
-import { render, fireEvent, waitForElement } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 
-import MoviesList from './MoviesList';
+import MoviesList, { SelectedMovie } from './MoviesList';
 import MovieType from './MovieType';
 
 const movies: MovieType[] = [
@@ -11,15 +11,15 @@ const movies: MovieType[] = [
     title: 'A movie',
     image: '/img/a-movie.png',
     overview: 'The movie',
-    genres: ['genre one']
+    genres: ['genre one'],
   },
   {
     id: 2,
     title: 'Another movie',
     image: '/img/another-movie.png',
     overview: 'That other movie',
-    genres: ['genre two', 'genre three']
-  }
+    genres: ['genre two', 'genre three'],
+  },
 ];
 
 describe('The MoviesList', () => {
@@ -63,7 +63,10 @@ describe('The MoviesList', () => {
       />
     );
 
-    expect(await findByText('genre one')).toBeInTheDocument();
+    // Make sure the lazy component is loaded in order to prevent random failures
+    await SelectedMovie;
+
+    await expect(await findByText('genre one')).toBeInTheDocument();
   });
 
   test('selects a movie when the card header is clicked', () => {
