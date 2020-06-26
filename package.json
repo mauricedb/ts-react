@@ -19,7 +19,7 @@
     "@stryker-mutator/html-reporter": "^3.1.0",
     "@stryker-mutator/jest-runner": "^3.3.0",
     "@stryker-mutator/typescript": "^3.3.0",
-    "@testing-library/jest-dom": "5.10.1",
+    "@testing-library/jest-dom": "5.11.0",
     "@testing-library/react": "10.4.3",
     "@types/classnames": "2.2.10",
     "@types/faker": "4.1.12",
