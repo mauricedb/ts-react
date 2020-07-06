@@ -1522,12 +1522,12 @@
   resolved "https://registry.yarnpkg.com/@stryker-mutator/html-reporter/-/html-reporter-3.1.0.tgz#b89692338037a0d168f9153457f5c71360c0c8c6"
   integrity sha512-Lpn9YGt4NS9lLYhjBNZ1yZ9tCX9FWa66skR6Ieij3wMMtQvPlSswar6fmVqUiyPl/wmpTGSoptOcWDFEZ5qp8A==
 
-"@stryker-mutator/jest-runner@^3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-3.3.0.tgz#c3306e6526061af5d5e4fd90ced627d8d495272d"
-  integrity sha512-Uq/C8+XS3+qS0EUN9l4qdGQWZhEn10OOToSYCSpylAlmKYe5LDVWP2wdwXqi2V6z0hGJjQgoJuvlH39dda7IBg==
+"@stryker-mutator/jest-runner@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@stryker-mutator/jest-runner/-/jest-runner-3.3.1.tgz#9f42d5a5afeea11aa41de76bd192588173e3985f"
+  integrity sha512-TAZ/TUTxZawASHPqc+iRgNyYMu3zYT4FlT/SJkf/hOsOTJk/QDu1woueTQGDb1cRs+OA0j5oOjh/mvdPvbxm3A==
   dependencies:
-    "@stryker-mutator/api" "^3.3.0"
+    "@stryker-mutator/api" "^3.3.1"
     semver "~6.3.0"
 
 "@stryker-mutator/typescript@^3.3.0":
