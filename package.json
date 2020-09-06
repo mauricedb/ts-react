@@ -20,7 +20,7 @@
     "@stryker-mutator/jest-runner": "^3.3.1",
     "@stryker-mutator/typescript": "^3.3.1",
     "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "10.4.9",
+    "@testing-library/react": "11.0.2",
     "@types/classnames": "2.2.10",
     "@types/faker": "4.1.12",
     "@types/jest": "26.0.13",
