@@ -47,7 +47,8 @@
     "prettier": "prettier --write {src,public}/**/*.{js,ts,jsx,tsx,css,json,html}",
     "source-map:js": "source-map-explorer ./build/static/js/*.js",
     "source-map:css": "source-map-explorer ./build/static/css/*.css",
-    "license-checker": "npx license-checker --summary --production --direct"
+    "license-checker": "npx license-checker --summary --production --direct",
+    "dcu": "docker-compose up --build"
   },
   "eslintConfig": {
     "extends": "react-app"
