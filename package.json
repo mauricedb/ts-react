@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "@sentry/browser": "5.27.6",
+    "@sentry/browser": "5.28.0",
     "bootstrap": "4.5.3",
     "classnames": "2.2.6",
     "formik": "2.2.5",
