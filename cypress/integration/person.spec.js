@@ -1,7 +1,6 @@
 context('Person', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000');
-    // cy.contains('Counter').click();
   });
 
   it('opens the page', () => {

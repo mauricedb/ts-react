@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
+import { CypressHistorySupport } from 'cypress-react-router';
 
 import Counter from './Counter/Counter';
 import Person from './Person/Person';
@@ -14,6 +15,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="container">
+          <CypressHistorySupport />
           <Navbar bg="dark" variant="dark">
             <Navbar.Brand as={Link} to="/">
               React & TypeScript
