@@ -13,7 +13,7 @@ const Counter = ({ amount }: CounterProps) => {
     <div className="text-center">
       <div>Count: {count}</div>
       <div>
-        <button onClick={() => setCount(count + amount)}>Increment 1</button>
+        <button onClick={() => setCount(count + amount)}>Increment</button>
       </div>
     </div>
   );
