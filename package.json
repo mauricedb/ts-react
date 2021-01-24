@@ -4,7 +4,7 @@
   "license": "MIT",
   "dependencies": {
     "@sentry/browser": "5.30.0",
-    "bootstrap": "4.5.3",
+    "bootstrap": "4.6.0",
     "classnames": "2.2.6",
     "cypress-react-router": "^1.0.0",
     "formik": "2.2.6",
