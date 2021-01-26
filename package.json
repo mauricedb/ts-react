@@ -30,7 +30,7 @@
     "@types/react-dom": "17.0.0",
     "@types/react-router-dom": "5.1.7",
     "cypress": "6.3.0",
-    "faker": "5.1.0",
+    "faker": "5.2.0",
     "husky": "4.3.8",
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "prettier": "2.2.1",
