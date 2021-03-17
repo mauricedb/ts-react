@@ -12,7 +12,7 @@
     "react-bootstrap": "1.5.2",
     "react-dom": "17.0.1",
     "react-router-dom": "5.2.0",
-    "use-abortable-fetch": "3.0.1",
+    "use-abortable-fetch": "3.0.2",
     "use-formik-side-effects": "1.1.5"
   },
   "devDependencies": {
