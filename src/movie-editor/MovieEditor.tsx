@@ -4,7 +4,7 @@ import {
   FieldArray,
   Form,
   FormikProps,
-  withFormik
+  withFormik,
 } from 'formik';
 
 import { Movie } from './MovieType';
@@ -12,7 +12,7 @@ import CastMember from './CastMember';
 import LabeledInput from './LabeledInput';
 import LabeledTextArea from './LabeledTextArea';
 import AudienceScore from './AudienceScore';
-import Debug from './Debug';
+import { Debug } from './Debug';
 
 const initialMovie: Movie = {
   id: 771028554,
@@ -21,7 +21,7 @@ const initialMovie: Movie = {
   mpaaRating: 'R',
   ratings: {
     criticsScore: 93,
-    audienceScore: 85
+    audienceScore: 85,
   },
   criticsConsensus:
     "As gut-wrenching as it is inspirational, 127 Hours unites one of Danny Boyle's most beautifully exuberant directorial efforts with a terrific performance from James Franco.",
@@ -32,36 +32,36 @@ const initialMovie: Movie = {
     thumbnail: 'http://content6.flixster.com/movie/11/15/34/11153440_mob.jpg',
     profile: 'http://content6.flixster.com/movie/11/15/34/11153440_pro.jpg',
     detailed: 'http://content6.flixster.com/movie/11/15/34/11153440_det.jpg',
-    original: 'http://content6.flixster.com/movie/11/15/34/11153440_ori.jpg'
+    original: 'http://content6.flixster.com/movie/11/15/34/11153440_ori.jpg',
   },
   abridgedCast: [
     {
       id: 162653202,
       name: 'James Franco',
-      characters: ['Aron Ralston']
+      characters: ['Aron Ralston'],
     },
     {
       id: 347990463,
       name: 'Amber Tamblyn',
-      characters: ['Megan']
+      characters: ['Megan'],
     },
     {
       id: 414200709,
       name: 'Kate Mara',
-      characters: ['Kristi']
+      characters: ['Kristi'],
     },
     {
       id: 770681921,
       name: 'Clemence Poesy',
-      characters: ['Rana']
+      characters: ['Rana'],
     },
     {
       id: 364624768,
       name: 'Kate Burton',
-      characters: ["Aron's Mom"]
-    }
+      characters: ["Aron's Mom"],
+    },
   ],
-  abridgedDirectors: ['Danny Boyle']
+  abridgedDirectors: ['Danny Boyle'],
 };
 
 type MovieEditorProps = {
@@ -107,11 +107,11 @@ const MovieEditor = ({ values }: FormikProps<Movie>) => {
 MovieEditor.displayName = 'MovieEditor';
 
 export default withFormik<MovieEditorProps, Movie>({
-  mapPropsToValues: props => props.movie || initialMovie,
+  mapPropsToValues: (props) => props.movie || initialMovie,
   handleSubmit: () => {},
-  validate: values => ({
+  validate: (values) => ({
     title: values.title ? undefined : 'The title is required',
-    synopsis: values.synopsis ? undefined : 'The synopsis is required'
+    synopsis: values.synopsis ? undefined : 'The synopsis is required',
   }),
-  displayName: 'withFormik(MovieEditor)'
+  displayName: 'withFormik(MovieEditor)',
 })(MovieEditor);

@@ -4,10 +4,10 @@ import {
   reducer,
   createChangeFirstName,
   createChangeLastName,
-  initialState
+  initialState,
 } from './reducer';
 
-const Person = () => {
+export const Person = () => {
   const [person, dispatch] = useReducer(reducer, initialState);
 
   return (
@@ -17,7 +17,7 @@ const Person = () => {
         <input
           type="text"
           value={person.firstName}
-          onChange={e => dispatch(createChangeFirstName(e.target.value))}
+          onChange={(e) => dispatch(createChangeFirstName(e.target.value))}
         />
       </div>
       <div>
@@ -25,7 +25,7 @@ const Person = () => {
         <input
           type="text"
           value={person.lastName}
-          onChange={e => dispatch(createChangeLastName(e.target.value))}
+          onChange={(e) => dispatch(createChangeLastName(e.target.value))}
         />
       </div>
       <div>
@@ -35,4 +35,4 @@ const Person = () => {
   );
 };
 
-export default Person;
+Person.displayName = 'Person';

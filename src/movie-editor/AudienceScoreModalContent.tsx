@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Formik, FormikProps } from 'formik';
 import LabeledInput from './LabeledInput';
-import Debug from './Debug';
+import { Debug } from './Debug';
 
 type AudienceScoreModalContentProps = {
   audienceScore: number;
@@ -15,17 +15,17 @@ type AudienceScoreModalContentState = {
   audienceScores: number[];
 };
 
-const AudienceScoreModalContent = ({
+export const AudienceScoreModalContent = ({
   audienceScore,
   closeModal,
-  onSave
+  onSave,
 }: AudienceScoreModalContentProps) => {
   return (
     <Formik
       initialValues={{
-        audienceScores: [audienceScore - 1, audienceScore, audienceScore + 1]
+        audienceScores: [audienceScore - 1, audienceScore, audienceScore + 1],
       }}
-      onSubmit={values => {
+      onSubmit={(values) => {
         const sum = values.audienceScores.reduce((p, c) => p + c, 0);
         const score = Math.round(sum / values.audienceScores.length);
 
@@ -37,7 +37,7 @@ const AudienceScoreModalContent = ({
         dirty,
         isValid,
         submitForm,
-        resetForm
+        resetForm,
       }: FormikProps<AudienceScoreModalContentState>) => {
         const isWindows = navigator.platform === 'Win32';
         const saveButton = (
@@ -85,4 +85,4 @@ const AudienceScoreModalContent = ({
   );
 };
 
-export default AudienceScoreModalContent;
+AudienceScoreModalContent.displayName = 'AudienceScoreModalContent';

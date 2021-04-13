@@ -1,8 +1,8 @@
 import React, { InputHTMLAttributes } from 'react';
 import { connect, Field, FormikContextType, getIn } from 'formik';
 import classNames from 'classnames';
-import ModalButton from './ModalButton';
-import AudienceScoreModalContent from './AudienceScoreModalContent';
+import { ModalButton } from './ModalButton';
+import { AudienceScoreModalContent } from './AudienceScoreModalContent';
 type AudienceScoreProps = {};
 
 const AudienceScore = ({
@@ -48,6 +48,8 @@ const AudienceScore = ({
     </div>
   );
 };
+
+AudienceScore.displayName = 'AudienceScore';
 
 export default connect<
   AudienceScoreProps & InputHTMLAttributes<HTMLInputElement>

@@ -6,7 +6,7 @@ type CounterProps = {
   amount: number;
 };
 
-const Counter = ({ amount }: CounterProps) => {
+export const Counter = ({ amount }: CounterProps) => {
   const [count, setCount] = useState<CounterState>(0);
 
   return (
@@ -23,4 +23,4 @@ Counter.defaultProps = {
   amount: 1,
 };
 
-export default Counter;
+Counter.displayName = 'Counter';

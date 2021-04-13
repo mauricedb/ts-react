@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { Navbar, Nav } from 'react-bootstrap';
 import { CypressHistorySupport } from 'cypress-react-router';
 
-import Counter from './Counter/Counter';
-import Person from './Person/Person';
+import { Counter } from './Counter/Counter';
+import { Person } from './Person/Person';
 import Movies from './movies/Movies';
 import MovieEditor from './movie-editor/MovieEditor';
 import ShapeEditor from './shape-editor/ShapeEditor';

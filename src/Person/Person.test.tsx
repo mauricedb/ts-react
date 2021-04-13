@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent } from '@testing-library/react';
 
-import Person from './Person';
+import { Person } from './Person';
 
 test('can render initial person', () => {
   const { getByText } = render(<Person />);
@@ -15,7 +15,7 @@ test('can render initial person', () => {
 
   fireEvent.change(getByDisplayValue('Maurice'), { target: { value: 'Jack' } });
   fireEvent.change(getByDisplayValue('de Beijer'), {
-    target: { value: 'Murphy' }
+    target: { value: 'Murphy' },
   });
 
   expect(getByText('Hello Jack Murphy')).toBeInTheDocument();

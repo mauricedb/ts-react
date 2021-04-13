@@ -8,7 +8,11 @@ type ModalButtonProps = {
   label: string;
 };
 
-const ModalButton = ({ children, label, className }: ModalButtonProps) => {
+export const ModalButton = ({
+  children,
+  label,
+  className,
+}: ModalButtonProps) => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   return (
@@ -23,11 +27,11 @@ const ModalButton = ({ children, label, className }: ModalButtonProps) => {
 
       <Modal show={isModalOpen} onHide={() => setModalOpen(false)}>
         {React.cloneElement(children, {
-          closeModal: () => setModalOpen(false)
+          closeModal: () => setModalOpen(false),
         })}
       </Modal>
     </>
   );
 };
 
-export default ModalButton;
+ModalButton.displayName = 'ModalButton';
