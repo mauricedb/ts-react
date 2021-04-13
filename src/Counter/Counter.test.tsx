@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent } from '@testing-library/react';
 
-import Counter from './Counter';
+import { Counter } from './Counter';
 
 test('can render initial count', () => {
   const { getByText } = render(<Counter />);

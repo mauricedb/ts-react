@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormikConsumer } from 'formik';
 
-var replacer = function(this: any, key: string, value: any) {
+var replacer = function (this: any, key: string, value: any) {
   if (this[key] instanceof Date) {
     const date: Date = this[key];
 
@@ -11,20 +11,20 @@ var replacer = function(this: any, key: string, value: any) {
       date: date.getDate(),
       hours: date.getHours(),
       minutes: date.getMinutes(),
-      seconds: date.getSeconds()
+      seconds: date.getSeconds(),
     };
   }
 
   return value;
 };
 
-const Debug = () => (
+export const Debug = () => (
   <div
     style={{
       margin: '3rem 0',
       borderRadius: 4,
       background: '#f6f8fa',
-      boxShadow: '0 0 1px #eee inset'
+      boxShadow: '0 0 1px #eee inset',
     }}
   >
     <div
@@ -37,7 +37,7 @@ const Debug = () => (
         padding: '.5rem',
         background: '#555',
         color: '#fff',
-        letterSpacing: '1px'
+        letterSpacing: '1px',
       }}
     >
       Formik State
@@ -48,7 +48,7 @@ const Debug = () => (
           style={{
             fontSize: '.65rem',
             padding: '.25rem .5rem',
-            overflowX: 'scroll'
+            overflowX: 'scroll',
           }}
         >
           {JSON.stringify(rest, replacer, 2)}
@@ -58,4 +58,4 @@ const Debug = () => (
   </div>
 );
 
-export default Debug;
+Debug.displayName = 'Debug';

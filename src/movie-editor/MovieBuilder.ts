@@ -2,8 +2,8 @@ import faker from 'faker';
 import { Movie, Rating, CastType, Posters } from './MovieType';
 
 export class RatingsBuilder {
-  private criticsScore: number = faker.random.number({ min: 1, max: 100 });
-  private audienceScore: number = faker.random.number({ min: 1, max: 100 });
+  private criticsScore: number = faker.datatype.number({ min: 1, max: 100 });
+  private audienceScore: number = faker.datatype.number({ min: 1, max: 100 });
 
   withCriticsScore(criticsScore: number) {
     this.criticsScore = criticsScore;
@@ -18,7 +18,7 @@ export class RatingsBuilder {
   build(): Rating {
     return {
       criticsScore: this.criticsScore,
-      audienceScore: this.audienceScore
+      audienceScore: this.audienceScore,
     };
   }
 }
@@ -29,7 +29,7 @@ export class PostersBuilder {
       thumbnail: faker.image.avatar(),
       profile: faker.image.animals(),
       detailed: faker.image.city(),
-      original: faker.image.cats()
+      original: faker.image.cats(),
     };
   }
 }
@@ -37,11 +37,11 @@ export class PostersBuilder {
 export class AbridgedCastBuilder {
   build(): CastType {
     return {
-      id: faker.random.number(),
+      id: faker.datatype.number(),
       name: faker.name.findName(),
-      characters: Array.from({ length: faker.random.number(3) }).map(() =>
+      characters: Array.from({ length: faker.datatype.number(3) }).map(() =>
         faker.name.findName()
-      )
+      ),
     };
   }
 }
@@ -63,23 +63,23 @@ export class MovieBuilder {
 
   build(): Movie {
     return {
-      id: faker.random.number(),
+      id: faker.datatype.number(),
       title: this.title,
-      year: faker.random.number({ min: 1900, max: 2019 }),
+      year: faker.datatype.number({ min: 1900, max: 2019 }),
       mpaaRating: 'R',
       ratings: this.ratings,
       criticsConsensus: faker.lorem.paragraph(),
       synopsis: faker.lorem.paragraph(),
-      genres: Array.from({ length: faker.random.number(5) }).map(() =>
+      genres: Array.from({ length: faker.datatype.number(5) }).map(() =>
         faker.lorem.word()
       ),
       posters: this.posters,
-      abridgedCast: Array.from({ length: faker.random.number(5) }).map(() =>
+      abridgedCast: Array.from({ length: faker.datatype.number(5) }).map(() =>
         new AbridgedCastBuilder().build()
       ),
-      abridgedDirectors: Array.from({ length: faker.random.number(3) }).map(
-        () => faker.name.findName()
-      )
+      abridgedDirectors: Array.from({
+        length: faker.datatype.number(3),
+      }).map(() => faker.name.findName()),
     };
   }
 }

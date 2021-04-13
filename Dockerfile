@@ -2,7 +2,7 @@ FROM node:lts-alpine
 WORKDIR /app
 
 COPY package.json /app
-COPY yarn.lock /app
+COPY package-lock /app
 
 RUN yarn install
 
