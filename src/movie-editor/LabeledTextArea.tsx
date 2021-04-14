@@ -1,5 +1,5 @@
-import React, { TextareaHTMLAttributes } from 'react';
-import { connect, Field, FormikContextType, getIn } from 'formik';
+import { TextareaHTMLAttributes } from 'react';
+import { Field, useField } from 'formik';
 import classNames from 'classnames';
 
 type LabeledTextAreaProps = {
@@ -16,14 +16,9 @@ const LabeledTextArea = ({
   controlClassName,
   labelClassName,
   className,
-  formik,
   ...props
-}: LabeledTextAreaProps &
-  TextareaHTMLAttributes<HTMLTextAreaElement> & {
-    formik: FormikContextType<any>;
-  }) => {
-  const error = getIn(formik.errors, name);
-  const touched = getIn(formik.touched, name);
+}: LabeledTextAreaProps & TextareaHTMLAttributes<HTMLTextAreaElement>) => {
+  const [, { error, touched }] = useField(name);
 
   return (
     <div className={classNames('form-group', className)}>
@@ -42,7 +37,7 @@ const LabeledTextArea = ({
         rows={rows}
         className={classNames('form-control', controlClassName, {
           'is-invalid': error,
-          'is-valid': !error
+          'is-valid': !error,
         })}
       />
       {error && touched && <div className="invalid-feedback">{error}</div>}
@@ -50,6 +45,4 @@ const LabeledTextArea = ({
   );
 };
 
-export default connect<
-  LabeledTextAreaProps & TextareaHTMLAttributes<HTMLTextAreaElement>
->(LabeledTextArea);
+export default LabeledTextArea;

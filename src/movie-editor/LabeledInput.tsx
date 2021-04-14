@@ -1,5 +1,5 @@
-import React, { InputHTMLAttributes } from 'react';
-import { connect, Field, FormikContextType, getIn } from 'formik';
+import { InputHTMLAttributes } from 'react';
+import { Field, useField } from 'formik';
 import classNames from 'classnames';
 
 type LabeledInputProps = {
@@ -15,14 +15,9 @@ const LabeledInput = ({
   controlClassName,
   labelClassName,
   className,
-  formik,
   ...props
-}: LabeledInputProps &
-  InputHTMLAttributes<HTMLInputElement> & {
-    formik: FormikContextType<any>;
-  }) => {
-  const error = getIn(formik.errors, name);
-  const touched = getIn(formik.touched, name);
+}: LabeledInputProps & InputHTMLAttributes<HTMLInputElement>) => {
+  const [, { error, touched }] = useField(name);
 
   return (
     <div className={classNames('form-group', className)}>
@@ -39,7 +34,7 @@ const LabeledInput = ({
         name={name}
         className={classNames('form-control', controlClassName, {
           'is-invalid': error,
-          'is-valid': !error
+          'is-valid': !error,
         })}
       />
       {error && touched && <div className="invalid-feedback">{error}</div>}
@@ -47,6 +42,4 @@ const LabeledInput = ({
   );
 };
 
-export default connect<
-  LabeledInputProps & InputHTMLAttributes<HTMLInputElement>
->(LabeledInput);
+export default LabeledInput;

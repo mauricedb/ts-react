@@ -1,19 +1,12 @@
-import React from 'react';
-import { connect, Field, FormikProps, getIn } from 'formik';
+import { Field, useField } from 'formik';
 
 type CastProps = {
   baseName?: string;
   remove: () => void;
 };
 
-const CastMember = <P extends {}>({
-  baseName,
-  formik,
-  remove
-}: CastProps & {
-  formik: FormikProps<P>;
-}) => {
-  const characters: string[] = getIn(formik.values, `${baseName}characters`);
+const CastMember = ({ baseName, remove }: CastProps) => {
+  const [{ value }] = useField<string[]>(`${baseName}characters`);
 
   return (
     <div className="form-group">
@@ -34,10 +27,10 @@ const CastMember = <P extends {}>({
       </div>
       <div>
         <label>Characters:&nbsp;</label>
-        <span>{characters.join(', ')}</span>
+        <span>{value.join(', ')}</span>
       </div>
     </div>
   );
 };
 
-export default connect<CastProps>(CastMember);
+export default CastMember;

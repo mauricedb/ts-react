@@ -1,5 +1,5 @@
-import React, { InputHTMLAttributes } from 'react';
-import { connect, Field, FormikContextType, getIn } from 'formik';
+import { InputHTMLAttributes } from 'react';
+import { Field, useField } from 'formik';
 import classNames from 'classnames';
 import { ModalButton } from './ModalButton';
 import { AudienceScoreModalContent } from './AudienceScoreModalContent';
@@ -7,16 +7,11 @@ type AudienceScoreProps = {};
 
 const AudienceScore = ({
   className,
-  formik,
   ...props
-}: AudienceScoreProps &
-  InputHTMLAttributes<HTMLInputElement> & {
-    formik: FormikContextType<any>;
-  }) => {
+}: AudienceScoreProps & InputHTMLAttributes<HTMLInputElement>) => {
   const name = 'ratings.audienceScore';
-  const audienceScore = getIn(formik.values, name);
-  const error = getIn(formik.errors, name);
-  const touched = getIn(formik.touched, name);
+  const [{ value }, { error, touched }, { setValue }] = useField(name);
+  const audienceScore = value;
 
   return (
     <div className="form-group">
@@ -39,7 +34,7 @@ const AudienceScore = ({
           <ModalButton label="📖">
             <AudienceScoreModalContent
               audienceScore={audienceScore}
-              onSave={(score) => formik.setFieldValue(name, score)}
+              onSave={(score) => setValue(score)}
             />
           </ModalButton>
         </div>
@@ -51,6 +46,4 @@ const AudienceScore = ({
 
 AudienceScore.displayName = 'AudienceScore';
 
-export default connect<
-  AudienceScoreProps & InputHTMLAttributes<HTMLInputElement>
->(AudienceScore);
+export default AudienceScore;
