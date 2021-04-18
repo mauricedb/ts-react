@@ -5,12 +5,10 @@ type ErrorBoundaryState = {
   error: Error | null;
 };
 
-export default function withErrorBoundary<P>(
-  WrappedComponent: ComponentType<P>
-) {
+export function withErrorBoundary<P>(WrappedComponent: ComponentType<P>) {
   return class ErrorBoundary extends Component<P, ErrorBoundaryState> {
     state: ErrorBoundaryState = {
-      error: null
+      error: null,
     };
 
     static getDerivedStateFromError(error: Error) {
@@ -22,8 +20,8 @@ export default function withErrorBoundary<P>(
         `Error:\n\t${error}\nComponent stack:${info.componentStack}`
       );
 
-      Sentry.withScope(scope => {
-        Object.keys(info).forEach(key => {
+      Sentry.withScope((scope) => {
+        Object.keys(info).forEach((key) => {
           scope.setExtra(key, (info as any)[key]);
         });
         Sentry.captureException(error);

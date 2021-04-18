@@ -5,7 +5,7 @@ import { ModalButton } from './ModalButton';
 import { AudienceScoreModalContent } from './AudienceScoreModalContent';
 type AudienceScoreProps = {};
 
-const AudienceScore = ({
+export const AudienceScore = ({
   className,
   ...props
 }: AudienceScoreProps & InputHTMLAttributes<HTMLInputElement>) => {
@@ -45,5 +45,3 @@ const AudienceScore = ({
 };
 
 AudienceScore.displayName = 'AudienceScore';
-
-export default AudienceScore;

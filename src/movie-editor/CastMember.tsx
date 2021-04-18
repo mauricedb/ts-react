@@ -5,7 +5,7 @@ type CastProps = {
   remove: () => void;
 };
 
-const CastMember = ({ baseName, remove }: CastProps) => {
+export const CastMember = ({ baseName, remove }: CastProps) => {
   const [{ value }] = useField<string[]>(`${baseName}characters`);
 
   return (
@@ -32,5 +32,3 @@ const CastMember = ({ baseName, remove }: CastProps) => {
     </div>
   );
 };
-
-export default CastMember;

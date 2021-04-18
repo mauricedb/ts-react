@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { Formik, FormikProps } from 'formik';
-import LabeledInput from './LabeledInput';
+import { LabeledInput } from './LabeledInput';
 import { Debug } from './Debug';
 
 type AudienceScoreModalContentProps = {

@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 
-import Loading from './Loading';
-import MovieType from './MovieType';
-import MovieListCard from './MovieListCard';
+import { Loading } from './Loading';
+import { MovieType } from './MovieType';
+import { MovieListCard } from './MovieListCard';
 import classes from './MoviesList.module.css';
 
 export const SelectedMovie = lazy(() => import('./SelectedMovie'));
@@ -13,7 +13,11 @@ type MoviesListProps = {
   setSelected: (movie: MovieType | null) => void;
 };
 
-const MoviesList = ({ movies, selected, setSelected }: MoviesListProps) => {
+export const MoviesList = ({
+  movies,
+  selected,
+  setSelected,
+}: MoviesListProps) => {
   return (
     <div className={classes.container}>
       <Suspense fallback={<Loading />}>
@@ -37,5 +41,3 @@ const MoviesList = ({ movies, selected, setSelected }: MoviesListProps) => {
     </div>
   );
 };
-
-export default MoviesList;

@@ -9,7 +9,7 @@ type LabeledInputProps = {
   labelClassName?: string;
 };
 
-const LabeledInput = ({
+export const LabeledInput = ({
   name,
   label,
   controlClassName,
@@ -41,5 +41,3 @@ const LabeledInput = ({
     </div>
   );
 };
-
-export default LabeledInput;

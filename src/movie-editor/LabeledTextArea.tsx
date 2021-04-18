@@ -9,7 +9,7 @@ type LabeledTextAreaProps = {
   labelClassName?: string;
 };
 
-const LabeledTextArea = ({
+export const LabeledTextArea = ({
   name,
   label,
   rows = 5,
@@ -44,5 +44,3 @@ const LabeledTextArea = ({
     </div>
   );
 };
-
-export default LabeledTextArea;

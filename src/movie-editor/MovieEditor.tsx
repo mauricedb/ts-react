@@ -8,10 +8,10 @@ import {
 } from 'formik';
 
 import { Movie } from './MovieType';
-import CastMember from './CastMember';
-import LabeledInput from './LabeledInput';
-import LabeledTextArea from './LabeledTextArea';
-import AudienceScore from './AudienceScore';
+import { CastMember } from './CastMember';
+import { LabeledInput } from './LabeledInput';
+import { LabeledTextArea } from './LabeledTextArea';
+import { AudienceScore } from './AudienceScore';
 import { Debug } from './Debug';
 
 const initialMovie: Movie = {

@@ -3,17 +3,17 @@ import { Formik, Field } from 'formik';
 import { FormikSideEffects } from 'use-formik-side-effects';
 import {
   ShapeEditorValues,
-  initialShapeEditorValues
+  initialShapeEditorValues,
 } from './shapeEditorValues';
 import { shapeEditorValuesSideEffects } from './shapeEditorValuesSideEffects';
 
-const ShapeEditor = () => {
+export const ShapeEditor = () => {
   return (
     <Formik<ShapeEditorValues>
       initialValues={initialShapeEditorValues}
       onSubmit={() => {}}
     >
-      {formik => (
+      {(formik) => (
         <div>
           <FormikSideEffects<ShapeEditorValues>
             determineSideEffects={shapeEditorValuesSideEffects}
@@ -40,5 +40,3 @@ const ShapeEditor = () => {
     </Formik>
   );
 };
-
-export default ShapeEditor;

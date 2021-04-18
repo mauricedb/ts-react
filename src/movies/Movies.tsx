@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import useFetch from 'use-abortable-fetch';
 
-import MovieType from './MovieType';
-import Loading from './Loading';
-import MoviesList from './MoviesList';
+import { MovieType } from './MovieType';
+import { Loading } from './Loading';
+import { MoviesList } from './MoviesList';
 
-const Movies = () => {
+export const Movies = () => {
   const { loading, data, error } = useFetch<MovieType[]>('/movies.json');
   const [selected, setSelected] = useState<MovieType | null>(null);
 
@@ -27,5 +27,3 @@ const Movies = () => {
 };
 
 Movies.displayName = 'Movies';
-
-export default Movies;

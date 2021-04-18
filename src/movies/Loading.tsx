@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Loading.module.css';
 
-const Loading = () => {
+export const Loading = () => {
   return <div className={classes.loading} />;
 };
 
-export default Loading;
+Loading.displayName = 'Loading';

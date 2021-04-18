@@ -1,6 +1,6 @@
-import React, { SFC } from 'react';
+import React, { FC } from 'react';
 
-import MovieType from './MovieType';
+import { MovieType } from './MovieType';
 import classes from './MovieListCard.module.css';
 
 type MovieListCardProps = {
@@ -8,7 +8,10 @@ type MovieListCardProps = {
   onMovieClicked: (movie: MovieType) => void;
 };
 
-const MovieListCard: SFC<MovieListCardProps> = ({ movie, onMovieClicked }) => {
+export const MovieListCard: FC<MovieListCardProps> = ({
+  movie,
+  onMovieClicked,
+}) => {
   return (
     <div className={classes.movie} onClick={() => onMovieClicked(movie)}>
       <h4>{movie.title}</h4>
@@ -18,4 +21,4 @@ const MovieListCard: SFC<MovieListCardProps> = ({ movie, onMovieClicked }) => {
   );
 };
 
-export default MovieListCard;
+MovieListCard.displayName = 'MovieListCard';
