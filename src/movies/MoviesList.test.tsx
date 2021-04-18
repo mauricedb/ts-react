@@ -2,8 +2,8 @@ import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent } from '@testing-library/react';
 
-import MoviesList, { SelectedMovie } from './MoviesList';
-import MovieType from './MovieType';
+import { MoviesList, SelectedMovie } from './MoviesList';
+import { MovieType } from './MovieType';
 
 const movies: MovieType[] = [
   {

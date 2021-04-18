@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import { render, fireEvent } from '@testing-library/react';
 
-import Movies from './Movies';
+import { Movies } from './Movies';
 
 jest.mock('use-abortable-fetch', () => () => ({
   loading: false,
@@ -12,16 +12,16 @@ jest.mock('use-abortable-fetch', () => () => ({
       title: 'A movie',
       image: '/img/a-movie.png',
       overview: 'The movie',
-      genres: ['genre one']
+      genres: ['genre one'],
     },
     {
       id: 2,
       title: 'Another movie',
       image: '/img/another-movie.png',
       overview: 'That other movie',
-      genres: ['genre two', 'genre three']
-    }
-  ]
+      genres: ['genre two', 'genre three'],
+    },
+  ],
 }));
 
 describe('The Movies', () => {

@@ -44,10 +44,7 @@ describe('The MovieEditor', () => {
   test('can render with ratings', () => {
     const movie = new MovieBuilder()
       .withRatings(
-        new RatingsBuilder()
-          .withCriticsScore(82)
-          .withAudienceScore(81)
-          .build()
+        new RatingsBuilder().withCriticsScore(82).withAudienceScore(81).build()
       )
       .build();
 
