@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "@sentry/browser": "6.3.6",
+    "@sentry/browser": "6.4.1",
     "bootstrap": "5.0.0",
     "classnames": "2.3.1",
     "cypress-react-router": "^1.0.2",
