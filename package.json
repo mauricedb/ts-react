@@ -28,7 +28,7 @@
     "@types/node": "15.12.4",
     "@types/react": "17.0.14",
     "@types/react-dom": "17.0.9",
-    "@types/react-router-dom": "5.1.7",
+    "@types/react-router-dom": "5.1.8",
     "cypress": "^7.7.0",
     "faker": "5.5.3",
     "husky": "7.0.1",
