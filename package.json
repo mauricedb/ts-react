@@ -26,7 +26,7 @@
     "@types/faker": "5.5.7",
     "@types/jest": "26.0.24",
     "@types/node": "15.12.4",
-    "@types/react": "17.0.14",
+    "@types/react": "17.0.15",
     "@types/react-dom": "17.0.9",
     "@types/react-router-dom": "5.1.8",
     "cypress": "^8.0.0",
