@@ -29,7 +29,7 @@
     "@types/react": "17.0.20",
     "@types/react-dom": "17.0.9",
     "@types/react-router-dom": "5.1.8",
-    "cypress": "^8.4.0",
+    "cypress": "^8.4.1",
     "faker": "5.5.3",
     "husky": "7.0.2",
     "jest-environment-jsdom-sixteen": "^2.0.0",
