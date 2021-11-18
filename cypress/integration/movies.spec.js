@@ -13,7 +13,7 @@ context('Movies', () => {
   });
 
   it('opens Pulp Fiction', () => {
-    cy.historyPush('/movies');
+    cy.routerNavigate('/movies');
     cy.contains('Pulp Fiction').click();
 
     cy.get('li').eq(0).should('have.text', 'Thriller');
