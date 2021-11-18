@@ -6,7 +6,7 @@ jobs:
   start:
     runs-on: ubuntu-latest
     container:
-      image: cypress/included:8.3.0
+      image: cypress/included:9.0.0
       options: --ipc=host
     steps:
       - name: Checkout
