@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: cypress/included:9.2.0
-      options: --ipc=host
+      options: --ipc=host --user 1001
     steps:
       - name: Checkout
         uses: actions/checkout@v2
