@@ -11,7 +11,7 @@
     "react": "18.0.0",
     "react-bootstrap": "2.2.1",
     "react-dom": "18.0.0",
-    "react-router-dom": "6.2.2",
+    "react-router-dom": "6.3.0",
     "use-abortable-fetch": "3.0.3",
     "use-formik-side-effects": "1.1.6"
   },
