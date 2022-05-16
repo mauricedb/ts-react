@@ -9,7 +9,7 @@
     "cypress-react-router": "^2.0.1",
     "formik": "2.2.9",
     "react": "18.0.0",
-    "react-bootstrap": "2.3.0",
+    "react-bootstrap": "2.4.0",
     "react-dom": "18.0.0",
     "react-router-dom": "6.3.0",
     "use-abortable-fetch": "3.0.3",
