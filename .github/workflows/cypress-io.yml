@@ -6,14 +6,14 @@ jobs:
   start:
     runs-on: ubuntu-latest
     container:
-      image: cypress/included:8.7.0
+      image: cypress/included:10.0.2
       options: --ipc=host
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Cypress tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           start: npm start
           wait-on: 'http://localhost:3000'
