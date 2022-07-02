@@ -5,9 +5,9 @@ on: [push]
 jobs:
   start:
     runs-on: ubuntu-latest
-    container:
-      image: cypress/included:10.2.0
-      options: --ipc=host
+    # container:
+    #   image: cypress/included:10.2.0
+    #   options: --ipc=host
     steps:
       - name: Checkout
         uses: actions/checkout@v2
