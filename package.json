@@ -21,7 +21,7 @@
     "@stryker-mutator/jest-runner": "^7.0.2",
     "@stryker-mutator/typescript": "^4.0.0",
     "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.3.0",
+    "@testing-library/react": "16.0.1",
     "@types/classnames": "2.3.1",
     "@types/faker": "5.5.9",
     "@types/jest": "29.5.13",
