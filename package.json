@@ -16,9 +16,9 @@
     "use-formik-side-effects": "1.1.6"
   },
   "devDependencies": {
-    "@stryker-mutator/core": "^7.0.2",
+    "@stryker-mutator/core": "^8.6.0",
     "@stryker-mutator/html-reporter": "^3.1.0",
-    "@stryker-mutator/jest-runner": "^7.0.2",
+    "@stryker-mutator/jest-runner": "^8.6.0",
     "@stryker-mutator/typescript": "^4.0.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "16.0.1",
