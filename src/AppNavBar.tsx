@@ -24,6 +24,9 @@ export const AppNavBar = () => {
         <Nav.Link as={Link} to="/shape-editor">
           Shape Editor
         </Nav.Link>
+        <Nav.Link as={Link} to="/links">
+          Links
+        </Nav.Link>
       </Nav>
       <Nav />
     </Navbar>

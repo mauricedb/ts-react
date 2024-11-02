@@ -4,6 +4,7 @@ import MovieEditor from './movie-editor/MovieEditor';
 import { Movies } from './movies/Movies';
 import { Person } from './Person/Person';
 import { ShapeEditor } from './shape-editor/ShapeEditor';
+import { Links } from './links/Links';
 
 export const AppRoutes = () => {
   return useRoutes([
@@ -26,6 +27,10 @@ export const AppRoutes = () => {
     {
       path: '/shape-editor',
       element: <ShapeEditor />,
+    },
+    {
+      path: '/links',
+      element: <Links />,
     },
   ]);
 };
