@@ -33,7 +33,7 @@
     "faker": "^5.5.3",
     "husky": "9.1.7",
     "jest-environment-jsdom-sixteen": "^2.0.0",
-    "prettier": "3.3.3",
+    "prettier": "3.4.1",
     "pretty-quick": "4.0.0",
     "react-scripts": "5.0.1",
     "source-map-explorer": "2.5.3",
