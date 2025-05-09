@@ -10,7 +10,7 @@
     "formik": "2.4.6",
     "react": "18.2.0",
     "react-bootstrap": "2.10.9",
-    "react-dom": "18.2.0",
+    "react-dom": "19.1.0",
     "react-router-dom": "7.5.3",
     "use-abortable-fetch": "3.0.3",
     "use-formik-side-effects": "1.1.6"
@@ -27,7 +27,7 @@
     "@types/jest": "29.5.14",
     "@types/node": "22.15.17",
     "@types/react": "18.0.14",
-    "@types/react-dom": "18.2.6",
+    "@types/react-dom": "19.1.2",
     "@types/react-router-dom": "5.3.3",
     "cypress": "^14.3.3",
     "faker": "^5.5.3",
