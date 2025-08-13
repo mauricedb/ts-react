@@ -10,7 +10,7 @@ jobs:
     #   options: --ipc=host
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Cypress tests
         uses: cypress-io/github-action@v6
