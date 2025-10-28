@@ -19,14 +19,14 @@ jobs:
           wait-on: 'http://localhost:3000'
 
         # Test run screenshots if the run fails
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         if: failure()
         with:
           name: cypress-screenshots
           path: cypress/screenshots
 
         # Test run video was always captured
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: cypress-videos
           path: cypress/videos
