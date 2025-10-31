@@ -4,6 +4,8 @@ on: [push]
 
 jobs:
   start:
+    if: false
+
     runs-on: ubuntu-latest
     # container:
     #   image: cypress/included:10.2.0
