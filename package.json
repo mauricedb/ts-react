@@ -8,9 +8,9 @@
     "classnames": "2.5.1",
     "cypress-react-router": "^2.0.1",
     "formik": "2.4.9",
-    "react": "19.2.4",
+    "react": "19.2.5",
     "react-bootstrap": "2.10.10",
-    "react-dom": "19.2.4",
+    "react-dom": "19.2.5",
     "react-router-dom": "7.14.0",
     "use-abortable-fetch": "3.0.3",
     "use-formik-side-effects": "1.1.6"
